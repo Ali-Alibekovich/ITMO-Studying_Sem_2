@@ -1,12 +1,14 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Objects;
-import java.util.Scanner;
 
 public class Users{
     String name;
     int id;
-    Users(int id,String name){
+    Users(int id,String name) throws IOException {
         this.id=id;
         this.name=name;
+        new Printer(this.toString());
     }
 
     @Override
