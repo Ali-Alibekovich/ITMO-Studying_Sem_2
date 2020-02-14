@@ -1,7 +1,7 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-public class Users<T> {
+public class Users{
     String name;
     int id;
     Users(int id,String name){
@@ -14,7 +14,7 @@ public class Users<T> {
 
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Users<?> users = (Users<?>) o;
+        Users users = (Users) o;
         return id == users.id &&
                 Objects.equals(name, users.name);
     }
