@@ -8,6 +8,6 @@ public class Main {
         Set<Users> users = new HashSet<>();
         users.add(new Users(12,"Ali"));
         users.add(new Users(2,"Hussein"));
-        Writer s = new Writer();
+        Writer.Writer();
     }
 }
