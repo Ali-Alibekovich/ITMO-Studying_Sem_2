@@ -32,6 +32,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -227,30 +231,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="411" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1581696900393" />
-    <state x="187" y="0" key="CommitChangelistDialog2" timestamp="1581763633831">
+    <state x="187" y="0" key="CommitChangelistDialog2" timestamp="1581763651649">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="187" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1581763633831" />
+    <state x="187" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1581763651649" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1581693493787">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1581693493787" />
-    <state width="1237" height="117" key="GridCell.Tab.0.bottom" timestamp="1581763623418">
+    <state width="1237" height="117" key="GridCell.Tab.0.bottom" timestamp="1581763660453">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581763623418" />
-    <state width="1237" height="117" key="GridCell.Tab.0.center" timestamp="1581763623418">
+    <state width="1237" height="117" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581763660453" />
+    <state width="1237" height="117" key="GridCell.Tab.0.center" timestamp="1581763660453">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581763623418" />
-    <state width="1237" height="117" key="GridCell.Tab.0.left" timestamp="1581763623418">
+    <state width="1237" height="117" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581763660453" />
+    <state width="1237" height="117" key="GridCell.Tab.0.left" timestamp="1581763660453">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581763623418" />
-    <state width="1237" height="117" key="GridCell.Tab.0.right" timestamp="1581763623418">
+    <state width="1237" height="117" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581763660453" />
+    <state width="1237" height="117" key="GridCell.Tab.0.right" timestamp="1581763660453">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="117" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581763623418" />
+    <state width="1237" height="117" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581763660453" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1581701933130">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -271,14 +275,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581693500668" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1581715630907">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1581763654996">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1581715630907" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1581763654996" />
     <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1581762754835">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1581762754835" />
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581763697705">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1581763697705" />
     <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581710362835">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
