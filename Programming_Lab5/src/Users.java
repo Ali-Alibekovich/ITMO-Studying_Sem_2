@@ -5,10 +5,9 @@ import java.util.Objects;
 public class Users{
     String name;
     int id;
-    Users(int id,String name) throws IOException {
+    Users(int id,String name){
         this.id=id;
         this.name=name;
-        new Printer(this.toString());
     }
 
     @Override
