@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d0080fc-f73b-434b-9c31-91e98db2927a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1581692704373" duration="1067000" />
       <workItem from="1581707508983" duration="5166000" />
       <workItem from="1581762754599" duration="2556000" />
-      <workItem from="1581775890610" duration="1421000" />
+      <workItem from="1581775890610" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1581694388559</created>
@@ -225,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581776101946</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="StartLab5">
+      <created>1581777497996</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1581777497996</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,13 +241,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NewCommit" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="StartLab5" />
+    <option name="LAST_COMMIT_MESSAGE" value="StartLab5" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Inspections" timestamp="1581697334509">
+    <state x="233" y="0" key="#Inspections" timestamp="1581777853141">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1581697334509" />
+    <state x="233" y="0" key="#Inspections/0.0.1280.680@0.0.1280.680" timestamp="1581777853141" />
     <state x="233" y="0" key="#Notifications" timestamp="1581693781182">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -253,10 +261,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="411" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1581696900393" />
-    <state x="187" y="0" key="CommitChangelistDialog2" timestamp="1581776100970">
+    <state x="187" y="0" key="CommitChangelistDialog2" timestamp="1581777497240">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="187" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1581776100970" />
+    <state x="187" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1581777497240" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1581693493787">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -297,10 +305,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581693500668" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1581776103082">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1581777499040">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1581776103082" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1581777499040" />
     <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1581775892825">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
