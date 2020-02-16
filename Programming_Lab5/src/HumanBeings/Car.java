@@ -1,4 +1,4 @@
-package Human;
+package HumanBeings;
 
 import java.util.Objects;
 

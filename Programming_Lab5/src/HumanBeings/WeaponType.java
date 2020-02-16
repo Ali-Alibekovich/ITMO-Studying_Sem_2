@@ -1,4 +1,4 @@
-package Human;
+package HumanBeings;
 
 public enum WeaponType {
     HAMMER,

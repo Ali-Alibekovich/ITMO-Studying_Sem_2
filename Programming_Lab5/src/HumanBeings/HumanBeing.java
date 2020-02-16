@@ -1,4 +1,4 @@
-package Human;
+package HumanBeings;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -71,6 +71,10 @@ public class HumanBeing {
 
     public Car getCar() {
         return car;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
 
