@@ -11,7 +11,7 @@ public class Coordinates {
     public int getX() {
         return x;
     }
-    public Coordinates(){
+    public Coordinates(int x, double y){
         this.x=x;
         this.y=y;
     }
