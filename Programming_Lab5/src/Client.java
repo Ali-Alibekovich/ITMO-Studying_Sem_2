@@ -9,7 +9,6 @@ public class Client {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CommandProcessing commandProcessing = new CommandProcessing();
-        commandProcessing.setCommands();
         commandProcessing.readCommands(scanner);
     }
 }
