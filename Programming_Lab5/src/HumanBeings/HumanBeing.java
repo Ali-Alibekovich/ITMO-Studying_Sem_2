@@ -1,9 +1,8 @@
 package HumanBeings;
-
-import java.util.Objects;
+import java.time.ZonedDateTime;
 import java.util.UUID;
 
-public class HumanBeing {
+public class HumanBeing implements Comparable<HumanBeing> {
     private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
     private Coordinates coordinates; //Поле не может быть null
@@ -16,66 +15,127 @@ public class HumanBeing {
     private Mood mood; //Поле может быть null
     private Car car; //Поле не может быть null
 
-    HumanBeing(String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car) throws IllegalArgumentException, NullPointerException{
-        java.time.ZonedDateTime creationDate = java.time.ZonedDateTime.now();
-        if(name==null || name.isEmpty()){
-            throw new IllegalArgumentException("invalid name");
-        }
-        if(impactSpeed==null || impactSpeed<=-680 ) {
-            throw new IllegalArgumentException("invalid Speed");
-        }
-        this.creationDate=creationDate;
+    public HumanBeing(String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
+        java.time.ZonedDateTime creationDate = ZonedDateTime.now();
         this.id = UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE;
         this.name=name;
+        this.coordinates=coordinates;
+        this.realHero=realHero;
+        this.hasToothpick=hasToothpick;
         this.impactSpeed=impactSpeed;
-        this.coordinates= Objects.requireNonNull(coordinates,"invalid coordinates");
-        this.realHero=Objects.requireNonNull(realHero,"invalid realHero");
-        this.hasToothpick=Objects.requireNonNull(hasToothpick,"invalid hasToothpick");
-        this.minutesOfWaiting=Objects.requireNonNull(minutesOfWaiting,"invalid minutesOfWaiting");
-        this.weaponType=Objects.requireNonNull(weaponType,"invalid weaponType");
-        this.mood=Objects.requireNonNull(mood,"invalid mood");
-        this.car=Objects.requireNonNull(car,"invalid car");
+        this.minutesOfWaiting=minutesOfWaiting;
+        this.weaponType=weaponType;
+        this.mood=mood;
+        this.car=car;
+    }
+
+    private Long getId() {
+        return id;
     }
 
     public String getName() {
         return name;
     }
 
+    public boolean setName(String name) {
+        if(name.equals("")||name==null){
+            return false;
+        }
+        this.name = name;
+        return true;
+    }
+
     public Coordinates getCoordinates() {
         return coordinates;
+    }
+
+    public void setCoordinates(Coordinates coordinates) {
+        this.coordinates = coordinates;
     }
 
     public Boolean getRealHero() {
         return realHero;
     }
 
+    public boolean setRealHero(Boolean realHero) {
+        if(realHero==null){
+            return false;
+        }
+        this.realHero = realHero;
+        return true;
+    }
+
     public Boolean getHasToothpick() {
         return hasToothpick;
+    }
+
+    public boolean setHasToothpick(Boolean hasToothpick) {
+        if (hasToothpick==null){
+            return false;
+        }
+        this.hasToothpick = hasToothpick;
+        return true;
     }
 
     public Double getImpactSpeed() {
         return impactSpeed;
     }
 
+    public boolean setImpactSpeed(Double impactSpeed) {
+        if(impactSpeed<-680||impactSpeed==null){
+            return false;
+        }
+        this.impactSpeed = impactSpeed;
+        return true;
+    }
+
     public Float getMinutesOfWaiting() {
         return minutesOfWaiting;
+    }
+
+    public boolean setMinutesOfWaiting(Float minutesOfWaiting) {
+        if(minutesOfWaiting==null){
+            return false;
+        }
+        this.minutesOfWaiting = minutesOfWaiting;
+        return true;
     }
 
     public WeaponType getWeaponType() {
         return weaponType;
     }
 
+    public boolean setWeaponType(WeaponType weaponType) {
+        if(weaponType==null){
+            return false;
+        }
+        this.weaponType = weaponType;
+        return true;
+    }
+
     public Mood getMood() {
         return mood;
+    }
+
+    public boolean setMood(Mood mood) {
+        if(mood==null){
+            return false;
+        }
+        this.mood = mood;
+        return true;
     }
 
     public Car getCar() {
         return car;
     }
 
-    public Long getId() {
-        return id;
+    public void setCar(Car car) {
+        this.car = car;
     }
 
+    @Override
+    public int compareTo(HumanBeing o) {
+        return (int)(o.getId()-this.getId());
+    }
 }
 

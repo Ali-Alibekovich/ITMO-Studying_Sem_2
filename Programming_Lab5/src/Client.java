@@ -1,14 +1,15 @@
-import Commands.CommandProcessing;
-import Commands.ExitCommand;
+import HumanBeings.HumanBeing;
 
-import java.io.IOException;
-import java.util.Objects;
+import java.util.Hashtable;
 import java.util.Scanner;
 
 public class Client {
+    private static boolean scriptStarted=false;
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        CommandProcessing commandProcessing = new CommandProcessing();
-        commandProcessing.readCommands(scanner);
+        Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();
+        Scanner sc = new Scanner(System.in);
+    }
+    public static boolean getScriptRunning(){
+        return scriptStarted;
     }
 }
