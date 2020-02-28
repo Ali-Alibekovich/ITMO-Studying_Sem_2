@@ -1,15 +1,15 @@
-import HumanBeings.HumanBeing;
 
-import java.util.Hashtable;
+import HumanBeings.HumanBeing;
+import HumanBeings.HumanReader;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Client {
-    private static boolean scriptStarted=false;
-    public static void main(String[] args) {
-        Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();
+    public static void main(String[] args) throws InputMismatchException {
         Scanner sc = new Scanner(System.in);
-    }
-    public static boolean getScriptRunning(){
-        return scriptStarted;
+        HumanReader humanReader = new HumanReader();
+        HumanReader.readHuman(sc);
+
     }
 }
