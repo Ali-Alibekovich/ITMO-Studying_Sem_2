@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public  class HumanReader {
     public static boolean catchedError=false;
-    public static HumanBeing readHuman(Scanner sc, MyCollection collection){
+    public static HumanBeing readHuman(Scanner sc){
         String name = readerName("Введите имя", sc);
         Coordinates coordinates=readerCoordinates("Введите координаты(x,y):",sc);
         Boolean realHero = readerBoolean("Введите параметр realHero(True/False):",sc);
