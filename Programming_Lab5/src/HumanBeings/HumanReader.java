@@ -1,6 +1,4 @@
 package HumanBeings;
-import Collection.MyCollection;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 public  class HumanReader {
     public static boolean catchedError=false;
@@ -12,50 +10,62 @@ public  class HumanReader {
         Double impactSpeed=readerDouble("Введите параметр impactSpeed(>-680):",sc);
         Float minutesOfWaiting = readerFloat("Введите параметр minutes of waiting:",sc);
         WeaponType weaponType= readerWeaponType("Введите параметр weapon type(HAMMER/SHOTGUN/MACHINE_GUN):",sc);
-        Car car = readerCar("Введите параметры Car(name и cool(True/False)):",sc);
+        Car car = readerCar("Введите параметры name и cool(True/False) у Car:",sc);
         Mood mood = readerMood("Введите параметр Mood(GLOOM/RAGE/FRENZY):",sc);
         return new HumanBeing(name,coordinates,realHero,hasToothpick,impactSpeed,minutesOfWaiting, weaponType, mood,car);
     }
 
-    private static Mood readerMood(String request, Scanner sc) throws IllegalArgumentException{
+    private static Mood readerMood(String request, Scanner sc){
         System.out.println(request);
         Mood mood;
         while(true){
             try {
                 mood=Mood.valueOf(sc.nextLine().trim());
                 break;
-            }catch (IllegalArgumentException e){
-                System.out.println("Введите корректное значение");
+            }catch (Exception e){
+                System.out.println("Введите корректное значение ");
                 catchedError=true;
             }
         }
         return mood;
     }
 
-    private static Car readerCar(String request, Scanner sc) throws InputMismatchException{
+    private static Car readerCar(String request, Scanner sc){
+        System.out.println(request);
         String name;
         boolean cool;
-        while(true){
-            try {
-                name=sc.nextLine().trim();
-                cool=sc.nextBoolean();
-                break;
-            }catch (InputMismatchException e){
+        while (true) {
+            String[] str = sc.nextLine().split(" ");
+            name=str[0];
+            if(str.length<2){
                 System.out.println("Введите корректное значение");
                 catchedError=true;
+            }else {
+                if (str[1].equals("True") || str[1].equals("true")) {
+                    cool = true;
+                    break;
+                } else {
+                    if (str[1].equals("False") || str[1].equals("false")) {
+                        cool = false;
+                        break;
+                    } else {
+                        System.out.println("Введите корректное значение");
+                        catchedError=true;
+                    }
+                }
             }
         }
         return new Car(name,cool);
     }
 
-    private static WeaponType readerWeaponType(String request, Scanner sc) throws IllegalArgumentException{
+    private static WeaponType readerWeaponType(String request, Scanner sc){
         System.out.println(request);
         WeaponType weaponType;
         while (true){
             try {
                 weaponType=WeaponType.valueOf(sc.nextLine().trim());
                 break;
-            }catch (IllegalArgumentException e){
+            }catch (Exception e){
                 System.out.println("Введите корректное значение");
                 catchedError=true;
             }
@@ -64,65 +74,77 @@ public  class HumanReader {
     }
 
 
-    private static Float readerFloat(String request, Scanner sc) throws InputMismatchException{
+    private static Float readerFloat(String request, Scanner sc){
         System.out.println(request);
         float minutesOfWaiting;
         while(true) {
             try {
-                minutesOfWaiting=sc.nextFloat();
+                minutesOfWaiting= Float.parseFloat(sc.nextLine());
                 break;
-            } catch (InputMismatchException e) {
-                System.out.println("Введите корректное значение");
+            }catch (Exception e){
+                System.out.println("Введите корректное значение ");
                 catchedError=true;
             }
         }
         return minutesOfWaiting;
     }
 
-    private static Double readerDouble(String request,Scanner sc) throws InputMismatchException {
+    private static Double readerDouble(String request,Scanner sc){
         System.out.println(request);
         double impactSpeed;
         while(true) {
             try {
-                impactSpeed=sc.nextDouble();
+                impactSpeed= Double.parseDouble(sc.nextLine());
                 if(impactSpeed<-680){
-                    throw new InputMismatchException();
+                    throw new Exception();
                 }
                 break;
-            } catch (InputMismatchException e) {
-                System.out.println("Введите корректное значение");
-                catchedError = true;
+            }catch (Exception e){
+                System.out.println("Введите корректное значение ");
+                catchedError=true;
             }
         }
         return impactSpeed;
     }
 
-    private static boolean readerBoolean(String request,Scanner sc) throws InputMismatchException {
+    private static boolean readerBoolean(String request,Scanner sc){
         System.out.println(request);
         boolean trueOrFalse;
         while (true) {
-            try {
-                trueOrFalse = sc.nextBoolean();
+            String[] str = sc.nextLine().split(" ");
+            if(str[0].equals("True")||str[0].equals("true")){
+                trueOrFalse=true;
                 break;
-            } catch (InputMismatchException e) {
-                System.out.println("Введите корректное значение");
-                catchedError=true;
+            }else{
+                if (str[0].equals("False")||str[0].equals("false")){
+                    trueOrFalse=false;
+                    break;
+                }else{
+                    System.out.println("Введите корректное значение");
+                    catchedError=true;
+                }
             }
         }
         return trueOrFalse;
     }
 
-    private static Coordinates readerCoordinates(String request, Scanner sc) throws InputMismatchException {
+    private static Coordinates readerCoordinates(String request, Scanner sc){
         System.out.println(request);
         int x;
         double y;
         while(true) {
+            String[] line=sc.nextLine().split(" ");
+            if(line.length<2){
+                System.out.println("Введите корректное значение");
+                catchedError=true;
+                continue;
+            }
             try {
-                x = sc.nextInt();
-                y = sc.nextDouble();
+                x = Integer.parseInt(line[0]);
+                y = Double.parseDouble(line[1]);
                 break;
-            }catch (InputMismatchException e){
-                System.out.println("Введите корректное значение координат");
+            }catch (Exception e){
+                System.out.println("Введите корректное значение");
                 catchedError=true;
             }
         }
