@@ -12,6 +12,8 @@ public  class HumanReader {
         WeaponType weaponType= readerWeaponType("Введите параметр weapon type(HAMMER/SHOTGUN/MACHINE_GUN):",sc);
         Car car = readerCar("Введите параметры name и cool(True/False) у Car:",sc);
         Mood mood = readerMood("Введите параметр Mood(GLOOM/RAGE/FRENZY):",sc);
+        if (catchedError=true)
+            return null;
         return new HumanBeing(name,coordinates,realHero,hasToothpick,impactSpeed,minutesOfWaiting, weaponType, mood,car);
     }
 
@@ -153,13 +155,13 @@ public  class HumanReader {
 
     public static String readerName(String request, Scanner sc){
         System.out.println(request);
-        String o=sc.nextLine().trim();
-        while(o.equals("")){
+        String name=sc.nextLine().trim();
+        while(name.equals("")){
             System.out.println("Поле имя не может быть пустым.");
-            o=sc.nextLine().trim();
+            name=sc.nextLine().trim();
             catchedError=true;
         }
-        return o;
+        return name;
     }
 
 }
