@@ -1,8 +1,8 @@
 package HumanBeings;
 import java.util.Scanner;
-public abstract   class HumanReader {
+public class HumanReader {
     public static boolean catchedError;
-    public static HumanBeing readHuman(Scanner sc){
+    public HumanBeing readHuman(Scanner sc){
         catchedError = false;
         String name = readerName("Введите имя", sc);
         Coordinates coordinates=readerCoordinates("Введите координаты(x,y):",sc);
@@ -15,7 +15,7 @@ public abstract   class HumanReader {
         Mood mood = readerMood("Введите параметр Mood(GLOOM/RAGE/FRENZY):",sc);
         return new HumanBeing(name, coordinates, realHero, hasToothpick, impactSpeed, minutesOfWaiting, weaponType, mood, car);
     }
-    private static Mood readerMood(String request, Scanner sc){
+    private  Mood readerMood(String request, Scanner sc){
         System.out.println(request);
         Mood mood;
         while(true){
@@ -30,7 +30,7 @@ public abstract   class HumanReader {
         return mood;
     }
 
-    private static Car readerCar(String request, Scanner sc){
+    private Car readerCar(String request, Scanner sc){
         System.out.println(request);
         String name;
         boolean cool;
@@ -58,7 +58,7 @@ public abstract   class HumanReader {
         return new Car(name,cool);
     }
 
-    private static WeaponType readerWeaponType(String request, Scanner sc){
+    private WeaponType readerWeaponType(String request, Scanner sc){
         System.out.println(request);
         WeaponType weaponType;
         while (true){
@@ -74,7 +74,7 @@ public abstract   class HumanReader {
     }
 
 
-    private static Float readerFloat(String request, Scanner sc){
+    private Float readerFloat(String request, Scanner sc){
         System.out.println(request);
         float minutesOfWaiting;
         while(true) {
@@ -89,7 +89,7 @@ public abstract   class HumanReader {
         return minutesOfWaiting;
     }
 
-    private static Double readerDouble(String request,Scanner sc){
+    private Double readerDouble(String request,Scanner sc){
         System.out.println(request);
         double impactSpeed;
         while(true) {
@@ -107,7 +107,7 @@ public abstract   class HumanReader {
         return impactSpeed;
     }
 
-    private static boolean readerBoolean(String request,Scanner sc){
+    private boolean readerBoolean(String request,Scanner sc){
         System.out.println(request);
         boolean trueOrFalse;
         while (true) {
@@ -128,7 +128,7 @@ public abstract   class HumanReader {
         return trueOrFalse;
     }
 
-    private static Coordinates readerCoordinates(String request, Scanner sc){
+    private  Coordinates readerCoordinates(String request, Scanner sc){
         System.out.println(request);
         int x;
         double y;
@@ -151,7 +151,7 @@ public abstract   class HumanReader {
         return new Coordinates(x,y);
     }
 
-    public static String readerName(String request, Scanner sc){
+    private String readerName(String request, Scanner sc){
         System.out.println(request);
         String name=sc.nextLine().trim();
         while(name.equals("")){
