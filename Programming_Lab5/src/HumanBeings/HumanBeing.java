@@ -2,7 +2,7 @@ package HumanBeings;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
-public class HumanBeing /*implements Comparable<HumanBeing>*/ {
+public class HumanBeing implements Comparable<HumanBeing> {
     private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
     private Coordinates coordinates; //Поле не может быть null
@@ -66,73 +66,89 @@ public class HumanBeing /*implements Comparable<HumanBeing>*/ {
         this.car = car;
     }
 
-//    public boolean setMood(Mood mood) {
-//        if(mood==null){
-//            return false;
-//        }
-//        this.mood = mood;
-//        return true;
-//    }
-//
-//    public boolean setWeaponType(WeaponType weaponType) {
-//        if(weaponType==null){
-//            return false;
-//        }
-//        this.weaponType = weaponType;
-//        return true;
-//    }
-//
-////    public boolean setMinutesOfWaiting(Float minutesOfWaiting) {
-////        if(minutesOfWaiting==null){
-////            return false;
-////        }
-////        this.minutesOfWaiting = minutesOfWaiting;
-////        return true;
-////    }
-////
-////
-////    public boolean setImpactSpeed(Double impactSpeed) {
-////        if(impactSpeed<-680||impactSpeed==null){
-////            return false;
-////        }
-////        this.impactSpeed = impactSpeed;
-////        return true;
-////    }
-////
-////    public boolean setHasToothpick(Boolean hasToothpick) {
-////        if (hasToothpick==null){
-////            return false;
-////        }
-////        this.hasToothpick = hasToothpick;
-////        return true;
-////    }
-////
-////    public boolean setName(String name) {
-////        if(name.equals("")||name==null){
-////            return false;
-////        }
-////        this.name = name;
-////        return true;
-////    }
-////
-////    public void setCoordinates(Coordinates coordinates) {
-////        this.coordinates = coordinates;
-////    }
-////
-////    public boolean setRealHero(Boolean realHero) {
-////        if(realHero==null){
-////            return false;
-////        }
-////        this.realHero = realHero;
-////        return true;
-////    }
-////
+    public boolean setMood(Mood mood) {
+        if(mood==null){
+            return false;
+        }
+        this.mood = mood;
+        return true;
+    }
 
-//    @Override
-//    public int compareTo(HumanBeing o) {
-//        /*
-//        Sorting by key
-//         */
-//    }
+    public boolean setWeaponType(WeaponType weaponType) {
+        if(weaponType==null){
+            return false;
+        }
+        this.weaponType = weaponType;
+        return true;
+    }
+
+    public boolean setMinutesOfWaiting(Float minutesOfWaiting) {
+        if(minutesOfWaiting==null){
+            return false;
+        }
+        this.minutesOfWaiting = minutesOfWaiting;
+        return true;
+    }
+
+
+    public boolean setImpactSpeed(Double impactSpeed) {
+        if(impactSpeed<-680||impactSpeed==null){
+            return false;
+        }
+        this.impactSpeed = impactSpeed;
+        return true;
+    }
+
+    public boolean setHasToothpick(Boolean hasToothpick) {
+        if (hasToothpick==null){
+            return false;
+        }
+        this.hasToothpick = hasToothpick;
+        return true;
+    }
+
+    public boolean setName(String name) {
+        if(name.equals("")||name==null){
+            return false;
+        }
+        this.name = name;
+        return true;
+    }
+
+    public void setCoordinates(Coordinates coordinates) {
+        this.coordinates = coordinates;
+    }
+
+    public boolean setRealHero(Boolean realHero) {
+        if(realHero==null){
+            return false;
+        }
+        this.realHero = realHero;
+        return true;
+    }
+    @Override
+    public int compareTo(HumanBeing o) {
+        /*
+        Sorting by key
+         */
+        return (int) (this.getId()-o.getId());
+    }
+
+    @Override
+    public String toString() {
+        return "HumanBeing{" +"\n"+
+                "id=" + id +",\n"+
+                "name='" + name + '\'' +",\n"+
+                "coordinates=" + coordinates +",\n"+
+                "creationDate=" + creationDate +",\n"+
+                "realHero=" + realHero +",\n"+
+                "hasToothpick=" + hasToothpick +",\n"+
+                "impactSpeed=" + impactSpeed +",\n"+
+                "minutesOfWaiting=" + minutesOfWaiting +",\n"+
+                "weaponType=" + weaponType +",\n"+
+                "mood=" + mood +",\n"+
+                "car=" + car +"\n"+
+                '}';
+    }
 }
 
