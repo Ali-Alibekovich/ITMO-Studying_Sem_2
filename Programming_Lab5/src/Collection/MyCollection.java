@@ -8,7 +8,6 @@ public class MyCollection extends Hashtable {
     public MyCollection() {
         this.collectionCreationDate = ZonedDateTime.now();
     }
-
     public ZonedDateTime getCollectionCreationDate() {
         return collectionCreationDate;
     }
@@ -35,4 +34,5 @@ public class MyCollection extends Hashtable {
         if (o == null) return "отсутствует";
         return o.toString();
     }
+
 }

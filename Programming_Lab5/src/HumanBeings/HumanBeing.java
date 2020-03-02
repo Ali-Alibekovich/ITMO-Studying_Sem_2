@@ -137,17 +137,17 @@ public class HumanBeing implements Comparable<HumanBeing> {
     @Override
     public String toString() {
         return "HumanBeing{" +"\n"+
-                "id=" + id +",\n"+
-                "name='" + name + '\'' +",\n"+
-                "coordinates=" + coordinates +",\n"+
-                "creationDate=" + creationDate +",\n"+
-                "realHero=" + realHero +",\n"+
-                "hasToothpick=" + hasToothpick +",\n"+
-                "impactSpeed=" + impactSpeed +",\n"+
-                "minutesOfWaiting=" + minutesOfWaiting +",\n"+
-                "weaponType=" + weaponType +",\n"+
-                "mood=" + mood +",\n"+
-                "car=" + car +"\n"+
+                "\tid=" + id +",\n"+
+                "\tname='" + name + '\'' +",\n"+
+                "\tcoordinates=" + coordinates +",\n"+
+                "\tcreationDate=" + creationDate +",\n"+
+                "\trealHero=" + realHero +",\n"+
+                "\thasToothpick=" + hasToothpick +",\n"+
+                "\timpactSpeed=" + impactSpeed +",\n"+
+                "\tminutesOfWaiting=" + minutesOfWaiting +",\n"+
+                "\tweaponType=" + weaponType +",\n"+
+                "\tmood=" + mood +",\n"+
+                "\tcar=" + car +"\n"+
                 '}';
     }
 }
