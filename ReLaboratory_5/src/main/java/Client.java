@@ -21,6 +21,7 @@ public class Client {
 
         //тесты
         humanBeingHashtable.put(1,new HumanReader().readHuman(sc));
+        System.out.println(humanBeingHashtable.get(1));
         commandHashMap.get("info").runCommand();
     }
 }
