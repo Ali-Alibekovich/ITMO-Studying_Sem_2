@@ -3,7 +3,11 @@ package ObjectSpecifications;
 import java.util.Scanner;
 
 public class HumanReader {
-    public static boolean catcherError;
+    private static boolean catcherError;
+
+    public static boolean getCatcherError() {
+        return catcherError;
+    }
 
     public HumanBeing readHuman(Scanner sc) {
         catcherError = false;
