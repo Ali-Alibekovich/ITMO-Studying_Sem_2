@@ -3,11 +3,11 @@ package ObjectSpecifications;
 import java.util.Scanner;
 
 public class HumanReader {
-    public static boolean catchedError;
+    public static boolean catcherError;
 
     public HumanBeing readHuman(Scanner sc) {
-        catchedError = false;
-        String name = readerName("Введите имя", sc);
+        catcherError = false;
+        String name = readerName("Введите name", sc);
         Coordinates coordinates = readerCoordinates(sc);
         Boolean realHero = readerBoolean("Введите параметр realHero(True/False):", sc);
         Boolean hasToothpick = readerBoolean("Введите параметр has tooth pick(True/False)", sc);
@@ -22,16 +22,16 @@ public class HumanReader {
     private Car readerCar(Scanner sc) {
         String name;
         boolean cool;
-        name=readerName("Введите значение name у Car:", sc);
-        cool=readerBoolean("Введите значение cool(True/False) у Car:",sc);
-        return new Car(name,cool);
+        name = readerName("Введите значение name у Car:", sc);
+        cool = readerBoolean("Введите значение cool(True/False) у Car:", sc);
+        return new Car(name, cool);
     }
 
     private Coordinates readerCoordinates(Scanner sc) {
         int x;
         double y;
-        x=readerInteger("Введите координату x: ",sc);
-        y=readerDouble("Введите координату y: ",sc);
+        x = readerInteger("Введите координату x:", sc);
+        y = readerDouble("Введите координату y:", sc);
         return new Coordinates(x, y);
     }
 
@@ -43,8 +43,8 @@ public class HumanReader {
                 mood = Mood.valueOf(sc.nextLine().toUpperCase().trim());
                 break;
             } catch (Exception e) {
-                System.out.println("Введите корректное значение ");
-                catchedError = true;
+                System.out.println("Введите корректное значение");
+                catcherError = true;
             }
         }
         return mood;
@@ -60,12 +60,37 @@ public class HumanReader {
                 break;
             } catch (Exception e) {
                 System.out.println("Введите корректное значение");
-                catchedError = true;
+                catcherError = true;
             }
         }
         return weaponType;
     }
 
+    private String readerName(String request, Scanner sc) {
+        System.out.println(request);
+        String name;
+        while (true) {
+            try {
+                name=sc.nextLine();
+                if (!name.isEmpty()) {
+                    if(request.contains("Car")) {
+                        return name;
+                    }else{
+                        if (name.matches("[a-zA-Z]+")){
+                            return name;
+                        } else {
+                            throw new Exception();
+                        }
+                    }
+                }
+                break;
+            } catch (Exception e) {
+                System.out.println("Введите корректное значение");
+                catcherError=true;
+            }
+        }
+        return name;
+    }
 
     private Float readerFloat(String request, Scanner sc) {
         System.out.println(request);
@@ -75,8 +100,8 @@ public class HumanReader {
                 minutesOfWaiting = Float.parseFloat(sc.nextLine());
                 break;
             } catch (Exception e) {
-                System.out.println("Введите корректное значение ");
-                catchedError = true;
+                System.out.println("Введите корректное значение");
+                catcherError = true;
             }
         }
         return minutesOfWaiting;
@@ -88,13 +113,13 @@ public class HumanReader {
         while (true) {
             try {
                 ScannedDouble = Double.parseDouble(sc.nextLine());
-                if(request.contains("impactSpeed") && ScannedDouble <= -680){
+                if (request.contains("impactSpeed") && ScannedDouble <= -680) {
                     throw new Exception();
                 }
                 break;
             } catch (Exception e) {
-                System.out.println("Введите корректное значение ");
-                catchedError = true;
+                System.out.println("Введите корректное значение");
+                catcherError = true;
             }
         }
         return ScannedDouble;
@@ -114,13 +139,14 @@ public class HumanReader {
                     break;
                 } else {
                     System.out.println("Введите корректное значение");
-                    catchedError = true;
+                    catcherError = true;
                 }
             }
         }
         return trueOrFalse;
     }
-    private int readerInteger(String request,Scanner sc){
+
+    private int readerInteger(String request, Scanner sc) {
         System.out.println(request);
         int Int;
         while (true) {
@@ -129,20 +155,9 @@ public class HumanReader {
                 break;
             } catch (Exception e) {
                 System.out.println("Введите корректное значение");
-                catchedError = true;
+                catcherError = true;
             }
         }
         return Int;
     }
-    private String readerName(String request, Scanner sc) {
-        System.out.println(request);
-        String name = sc.nextLine().trim();
-        while (name.equals("")) {
-            System.out.println("Поле имя не может быть пустым.");
-            name = sc.nextLine().trim();
-            catchedError = true;
-        }
-        return name;
-    }
-
 }
