@@ -71,7 +71,7 @@ public class HumanReader {
         String name;
         while (true) {
             try {
-                name=sc.nextLine();
+                name=sc.nextLine().trim();
                 if (!name.isEmpty()) {
                     if(request.contains("Car")) {
                         return name;
