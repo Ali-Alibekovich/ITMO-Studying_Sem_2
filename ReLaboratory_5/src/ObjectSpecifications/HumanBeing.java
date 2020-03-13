@@ -1,4 +1,4 @@
-package HumanBeings;
+package ObjectSpecifications;
 
 import java.time.ZonedDateTime;
 import java.util.UUID;

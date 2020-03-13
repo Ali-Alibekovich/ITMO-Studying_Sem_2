@@ -1,4 +1,4 @@
-package HumanBeings;
+package ObjectSpecifications;
 
 import java.util.Scanner;
 
