@@ -13,7 +13,7 @@ public class Client {
         Scanner sc = new Scanner(System.in);//Scanner
         HashMap<String,Command> commandHashMap = new HashMap<>();//Коллекция комманд
         Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();//Коллекция HumanBeings
-        CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable,sc);//Класс для работы с коллекцией
+        CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable);//Класс для работы с коллекцией
         CommandsCollection commandsCollection = new CommandsCollection();//Класс для коллекции комманд
         commandsCollection.setCommandHashtable(commandHashMap,collectionWorker);//Заполнение коммандами коллекции для комманд
 
