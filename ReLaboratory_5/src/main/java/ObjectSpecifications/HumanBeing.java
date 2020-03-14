@@ -93,7 +93,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
 
 
     public boolean setImpactSpeed(Double impactSpeed) {
-        if(impactSpeed<-680||impactSpeed==null){
+        if(impactSpeed < -680){
             return false;
         }
         this.impactSpeed = impactSpeed;
@@ -109,7 +109,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
     }
 
     public boolean setName(String name) {
-        if(name.equals("")||name==null){
+        if(name.equals("")){
             return false;
         }
         this.name = name;
@@ -129,10 +129,11 @@ public class HumanBeing implements Comparable<HumanBeing> {
     }
     @Override
     public int compareTo(HumanBeing o) {
-        /*
-        Sorting by key
-         */
-        return (int) (this.getId()-o.getId());
+        if(this.impactSpeed>o.impactSpeed) {
+            return 0;
+        }else {
+            return 1;
+        }
     }
 
     @Override

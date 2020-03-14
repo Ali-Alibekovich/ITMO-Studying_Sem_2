@@ -46,7 +46,7 @@ public class HumanReader {
             try {
                 mood = Mood.valueOf(sc.nextLine().toUpperCase().trim());
                 break;
-            } catch (Exception e) {
+            } catch (IllegalArgumentException e) {
                 System.out.println("Введите корректное значение");
                 catcherError = true;
             }
@@ -62,7 +62,7 @@ public class HumanReader {
             try {
                 weaponType = WeaponType.valueOf(sc.nextLine().toUpperCase().trim());
                 break;
-            } catch (Exception e) {
+            } catch (IllegalArgumentException e) {
                 System.out.println("Введите корректное значение");
                 catcherError = true;
             }
@@ -83,17 +83,17 @@ public class HumanReader {
                         if (name.matches("[a-zA-Z]+")){
                             return name;
                         } else {
-                            throw new Exception();
+                            throw new IllegalArgumentException();
                         }
                     }
+                }else{
+                    throw new IllegalArgumentException();
                 }
-                break;
-            } catch (Exception e) {
+            } catch (IllegalArgumentException e) {
                 System.out.println("Введите корректное значение");
                 catcherError=true;
             }
         }
-        return name;
     }
 
     private Float readerFloat(String request, Scanner sc) {
@@ -103,7 +103,7 @@ public class HumanReader {
             try {
                 minutesOfWaiting = Float.parseFloat(sc.nextLine());
                 break;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");
                 catcherError = true;
             }
@@ -118,10 +118,10 @@ public class HumanReader {
             try {
                 ScannedDouble = Double.parseDouble(sc.nextLine());
                 if (request.contains("impactSpeed") && ScannedDouble <= -680) {
-                    throw new Exception();
+                    throw new NumberFormatException();
                 }
                 break;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");
                 catcherError = true;
             }
@@ -157,7 +157,7 @@ public class HumanReader {
             try {
                 Int = Integer.parseInt(sc.nextLine());
                 break;
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");
                 catcherError = true;
             }

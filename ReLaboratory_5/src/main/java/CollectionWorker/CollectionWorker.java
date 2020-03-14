@@ -27,4 +27,5 @@ public class CollectionWorker implements Collection {
     public int getSize() {
         return collection.size();
     }
+
 }
