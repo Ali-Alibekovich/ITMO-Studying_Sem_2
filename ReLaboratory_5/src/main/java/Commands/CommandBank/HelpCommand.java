@@ -1,4 +1,6 @@
-package Commands;
+package Commands.CommandBank;
+
+import Commands.Command;
 
 public class HelpCommand implements Command {
     @Override
@@ -21,4 +23,8 @@ public class HelpCommand implements Command {
                 "print_unique_car : вывести уникальные значения поля car всех элементов в коллекции");
     }
 
+    @Override
+    public String toString() {
+        return "help";
+    }
 }
