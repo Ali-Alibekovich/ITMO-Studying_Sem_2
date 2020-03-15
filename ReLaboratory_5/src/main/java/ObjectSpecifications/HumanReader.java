@@ -116,7 +116,7 @@ public class HumanReader {
         double ScannedDouble;
         while (true) {
             try {
-                ScannedDouble = Double.parseDouble(sc.nextLine());
+                ScannedDouble = Double.parseDouble(sc.nextLine().trim());
                 if (request.contains("impactSpeed") && ScannedDouble <= -680) {
                     throw new NumberFormatException();
                 }
@@ -155,7 +155,7 @@ public class HumanReader {
         int Int;
         while (true) {
             try {
-                Int = Integer.parseInt(sc.nextLine());
+                Int = Integer.parseInt(sc.nextLine().trim());
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");

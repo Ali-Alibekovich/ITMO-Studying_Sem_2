@@ -10,7 +10,7 @@ public class CommandsCollection {
     public void setCommandHashtable(HashMap<String,Command> commandHashMap, CollectionWorker collectionWorker,Scanner sc) {
         commandHashMap.put("help",new HelpCommand());
         commandHashMap.put("info",new InfoCommand(collectionWorker));
-        commandHashMap.put("insert null {element}", new InsertCommand(collectionWorker));
+        commandHashMap.put("insert", new InsertCommand(collectionWorker,sc));
         commandHashMap.put("exit",new ExitCommand());
         commandHashMap.put("history",new HistoryCommand());
     }

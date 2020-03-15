@@ -4,8 +4,8 @@ import CollectionWorker.Collection;
 import Commands.Command;
 
 public class HistoryCommand implements Command {
-    static String[] commandHistory = new String[6];
-    static int i=0;
+    private static String[] commandHistory = new String[6];
+    private static int i=0;
     public static void saveCommand(String command) {
         if(i>=6){
             int y=5;
@@ -23,10 +23,10 @@ public class HistoryCommand implements Command {
          */
     }
     @Override
-    public void runCommand() {
-        for (String s : commandHistory){
-            if(s!=null){
-                System.out.println(s);
+    public void runCommand(String s) {
+        for (String k : commandHistory){
+            if(k!=null){
+                System.out.println(k);
             }
         }
     }

@@ -3,18 +3,38 @@ package Commands.CommandBank;
 import CollectionWorker.CollectionWorker;
 import Commands.Command;
 import ObjectSpecifications.HumanBeing;
+import ObjectSpecifications.HumanReader;
 
 import java.util.Hashtable;
+import java.util.Scanner;
 
 public class InsertCommand implements Command {
     Hashtable<Integer, HumanBeing> collection;
-    public InsertCommand(CollectionWorker collectionWorker) {
+    Scanner sc;
+    public InsertCommand(CollectionWorker collectionWorker, Scanner sc) {
         this.collection=collectionWorker.getCollection();
+        this.sc=sc;
     }
 
     @Override
-    public void runCommand() {
-
+    public void runCommand(String s) {
+        String[] command= s.split(" ");
+        int key;
+        try{
+            key=Integer.parseInt(command[1]);
+            if(!command[2].toLowerCase().equals("humanbeing")){
+                throw new NullPointerException();
+            }else {
+                collection.put(key,new HumanReader().readHuman(sc));
+                System.out.println("Объект создан");
+            }
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Неправильные аргументы команды");
+        }catch (NumberFormatException e){
+            System.out.println("Введен неправильный формат ключа");
+        }catch (NullPointerException e){
+            System.out.println("Такого типа коллекции нет");
+        }
     }
 
     @Override
