@@ -25,6 +25,6 @@ public class HelpCommand implements Command {
 
     @Override
     public String toString() {
-        return "help";
+        return "Команда Help";
     }
 }

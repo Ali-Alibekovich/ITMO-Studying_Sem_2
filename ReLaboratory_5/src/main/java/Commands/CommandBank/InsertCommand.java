@@ -19,6 +19,6 @@ public class InsertCommand implements Command {
 
     @Override
     public String toString() {
-        return "Insert";
+        return "Команда Insert";
     }
 }

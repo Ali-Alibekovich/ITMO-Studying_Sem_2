@@ -18,24 +18,6 @@ public class CommandsReader implements Command {
         this.sc=sc;
     }
 
-    static String[] commandHistory = new String[6];
-    int i=0;
-    public void saveCommand(String command) {
-        if(i>=6){
-            int y=5;
-            for(int i=4;i>=0;i--){
-                commandHistory[y]=commandHistory[i];
-                y--;
-            }
-            commandHistory[0]=command;
-        }else {
-            commandHistory[i] = command;
-            i++;
-        }
-        /*
-        Реализация через жопу(
-         */
-    }
 
     @Override
     public void runCommand() {
@@ -46,7 +28,7 @@ public class CommandsReader implements Command {
             try {
                 scannedCommand = sc.nextLine().toLowerCase();
                 commandsCollection.get(scannedCommand).runCommand();
-                saveCommand(commandsCollection.get(scannedCommand).toString());
+                HistoryCommand.saveCommand(commandsCollection.get(scannedCommand).toString());
             } catch (NoSuchElementException ex) {
                 System.out.println("Экстренный выход из коммандной строки");
                 break;

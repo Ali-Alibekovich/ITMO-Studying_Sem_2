@@ -18,5 +18,7 @@ public class Client {
         commandsCollection.setCommandHashtable(commandHashMap,collectionWorker,sc);//Заполнение коммандами коллекции для комманд
         CommandsReader commandsReader = new CommandsReader(commandHashMap,sc);
         commandsReader.runCommand();
+
+
     }
 }

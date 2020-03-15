@@ -17,6 +17,6 @@ public class InfoCommand implements Command {
 
     @Override
     public String toString() {
-        return "InfoCommand";
+        return "Команда Info";
     }
 }
