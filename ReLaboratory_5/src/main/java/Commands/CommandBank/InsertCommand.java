@@ -17,12 +17,11 @@ public class InsertCommand implements Command {
     }
 
     @Override
-    public void runCommand(String s) {
-        String[] command= s.split(" ");
+    public void runCommand(String[] s) {
         int key;
         try{
-            key=Integer.parseInt(command[1]);
-            if(!command[2].toLowerCase().equals("humanbeing")){
+            key=Integer.parseInt(s[1]);
+            if(!s[2].toLowerCase().equals("humanbeing")){
                 throw new NullPointerException();
             }else {
                 collection.put(key,new HumanReader().readHuman(sc));

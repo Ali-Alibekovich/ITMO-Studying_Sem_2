@@ -20,20 +20,15 @@ public class CommandsReader implements Command {
 
 
     @Override
-    public void runCommand(String s) {
+    public void runCommand(String[] s) {
         System.out.println("Добро пожаловать в консоль.\n" +
                 "Чтобы получить список команд введите help");
-        String scannedCommand;
+        String[] scannedCommand;
         while (true) {
             try {
-                scannedCommand = sc.nextLine().toLowerCase();
-                if(scannedCommand.contains("insert")){
-                    commandsCollection.get("insert").runCommand(scannedCommand);
-                    HistoryCommand.saveCommand(commandsCollection.get("insert").toString());
-                }else {
-                    commandsCollection.get(scannedCommand).runCommand("null");
-                    HistoryCommand.saveCommand(commandsCollection.get(scannedCommand).toString());
-                }
+                scannedCommand = sc.nextLine().toLowerCase().split(" ");
+                commandsCollection.get(scannedCommand[0]).runCommand(scannedCommand);
+                HistoryCommand.saveCommand(commandsCollection.get(scannedCommand[0]).toString());
             } catch (NoSuchElementException ex) {
                 System.out.println("Экстренный выход из коммандной строки");
                 break;

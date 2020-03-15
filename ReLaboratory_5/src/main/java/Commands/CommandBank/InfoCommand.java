@@ -9,7 +9,7 @@ public class InfoCommand implements Command {
         this.collectionWorker=collectionWorker;
     }
     @Override
-    public void runCommand(String s) {
+    public void runCommand(String[] s) {
         System.out.println("Тип коллекции: " + collectionWorker.getCollectionType()+"\n" +
                 "Дата инициализации: " + collectionWorker.getCreationDate()+"\n" +
                 "Размер коллекции: "+ collectionWorker.getSize());

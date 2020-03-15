@@ -23,7 +23,7 @@ public class HistoryCommand implements Command {
          */
     }
     @Override
-    public void runCommand(String s) {
+    public void runCommand(String[] s) {
         for (String k : commandHistory){
             if(k!=null){
                 System.out.println(k);

@@ -17,7 +17,7 @@ public class Client {
         CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable);//Класс для работы с коллекцией
         commandsCollection.setCommandHashtable(commandHashMap,collectionWorker,sc);//Заполнение коммандами коллекции для комманд
         CommandsReader commandsReader = new CommandsReader(commandHashMap,sc);
-        commandsReader.runCommand("null");
+        commandsReader.runCommand(null);
 
 
     }

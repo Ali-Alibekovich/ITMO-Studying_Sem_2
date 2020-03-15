@@ -4,7 +4,7 @@ import Commands.Command;
 
 public class HelpCommand implements Command {
     @Override
-    public void runCommand(String s) {
+    public void runCommand(String[] s) {
         System.out.println("help : вывести справку по доступным командам\n" +
                 "info : вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\n" +
                 "show : вывести в стандартный поток вывода все элементы коллекции в строковом представлении\n" +

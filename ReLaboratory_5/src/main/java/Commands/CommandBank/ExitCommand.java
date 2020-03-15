@@ -5,7 +5,7 @@ import Commands.Command;
 public class ExitCommand implements Command {
 
     @Override
-    public void runCommand(String s) {
+    public void runCommand(String[] s) {
         System.out.println("Работа с консолью завершена");
         System.exit(0);
     }
