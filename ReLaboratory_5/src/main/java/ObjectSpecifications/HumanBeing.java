@@ -15,6 +15,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
     private WeaponType weaponType; //Поле не может быть null
     private Mood mood; //Поле может быть null
     private Car car; //Поле не может быть null
+    private int key;
 
     public HumanBeing(String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
         ZonedDateTime creationDate = ZonedDateTime.now();
@@ -138,19 +139,27 @@ public class HumanBeing implements Comparable<HumanBeing> {
 
     @Override
     public String toString() {
-        return "ObjectSpecifications.HumanBeing{" +"\n"+
-                "\tid=" + id +",\n"+
-                "\tname='" + name + '\'' +",\n"+
-                "\tcoordinates=" + coordinates +",\n"+
-                "\tcreationDate=" + creationDate +",\n"+
-                "\trealHero=" + realHero +",\n"+
-                "\thasToothpick=" + hasToothpick +",\n"+
-                "\timpactSpeed=" + impactSpeed +",\n"+
-                "\tminutesOfWaiting=" + minutesOfWaiting +",\n"+
-                "\tweaponType=" + weaponType +",\n"+
-                "\tmood=" + mood +",\n"+
-                "\tcar=" + car +"\n"+
-                '}';
+        return "\"HumanBeing\":{" +
+                "\"id\":" +"\""+ id +"\"" +
+                ", \"key\":" + key +
+                ", \"name\":"+"\"" + name +"\"" +
+                ", \"coordinates\":" + coordinates +
+                ", \"realHero\":" + realHero +
+                ", \"hasToothpick\":" + hasToothpick +
+                ", \"impactSpeed\":" + impactSpeed +
+                ", \"minutesOfWaiting\":" + minutesOfWaiting +
+                ", \"weaponType\":"+"\"" + weaponType +"\""+
+                ", \"mood\":" +"\""+ mood +"\""+
+                ", \"car\":" + car +
+                "},";
+    }
+
+    public int getKey() {
+        return key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
     }
 }
 

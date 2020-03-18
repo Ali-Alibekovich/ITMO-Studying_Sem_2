@@ -9,6 +9,10 @@ public class HumanReader {
         return catcherError;
     }
 
+    public static void setCatcherError(boolean catcherError) {
+        HumanReader.catcherError = catcherError;
+    }
+
     public HumanBeing readHuman(Scanner sc) {
         catcherError = false;
         String name = readerName("Введите name", sc);
@@ -48,7 +52,7 @@ public class HumanReader {
                 break;
             } catch (IllegalArgumentException e) {
                 System.out.println("Введите корректное значение");
-                catcherError = true;
+                setCatcherError(true);
             }
         }
         return mood;
@@ -64,7 +68,7 @@ public class HumanReader {
                 break;
             } catch (IllegalArgumentException e) {
                 System.out.println("Введите корректное значение");
-                catcherError = true;
+                setCatcherError(true);
             }
         }
         return weaponType;
@@ -91,7 +95,7 @@ public class HumanReader {
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println("Введите корректное значение");
-                catcherError=true;
+                setCatcherError(true);
             }
         }
     }
@@ -105,7 +109,7 @@ public class HumanReader {
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");
-                catcherError = true;
+                setCatcherError(true);
             }
         }
         return minutesOfWaiting;
@@ -123,7 +127,7 @@ public class HumanReader {
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");
-                catcherError = true;
+                setCatcherError(true);
             }
         }
         return ScannedDouble;
@@ -143,7 +147,7 @@ public class HumanReader {
                     break;
                 } else {
                     System.out.println("Введите корректное значение");
-                    catcherError = true;
+                    setCatcherError(true);
                 }
             }
         }
@@ -159,7 +163,7 @@ public class HumanReader {
                 break;
             } catch (NumberFormatException e) {
                 System.out.println("Введите корректное значение");
-                catcherError = true;
+                setCatcherError(true);
             }
         }
         return Int;

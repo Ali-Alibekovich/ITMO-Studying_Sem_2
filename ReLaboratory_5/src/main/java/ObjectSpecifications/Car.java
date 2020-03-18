@@ -21,9 +21,9 @@ public class Car {
 
     @Override
     public String toString() {
-        return "ObjectSpecifications.Car{" +
-                "name='" + name + '\'' +
-                ", cool=" + cool +
+        return "{" +
+                "\"name\":"+ "\"" + name + "\"" +
+                ", \"cool\":" + cool +
                 '}';
     }
 }

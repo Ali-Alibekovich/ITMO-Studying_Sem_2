@@ -1,17 +1,12 @@
 package Commands.CommandBank;
-
-import CollectionWorker.CollectionWorker;
 import Commands.Command;
-import ObjectSpecifications.HumanBeing;
-
 import java.util.*;
+import static ObjectSpecifications.HumanReader.setCatcherError;
 
-/*
-    Реализовать команду History.
- */
+
 public class CommandsReader implements Command {
+    boolean  scriptIsRunning = false;
     HashMap<String,Command> commandsCollection;
-    HistoryCommand historyCommand = new HistoryCommand();
     Scanner sc;
     public CommandsReader(HashMap<String,Command> commandsCollection, Scanner sc){
         this.commandsCollection=commandsCollection;
@@ -31,9 +26,11 @@ public class CommandsReader implements Command {
                 HistoryCommand.saveCommand(commandsCollection.get(scannedCommand[0]).toString());
             } catch (NoSuchElementException ex) {
                 System.out.println("Экстренный выход из коммандной строки");
+                System.exit(0);
                 break;
             }catch (NullPointerException ex1){
                 System.out.println("Такой команды не существует");
+                setCatcherError(true);
             }
         }
     }
