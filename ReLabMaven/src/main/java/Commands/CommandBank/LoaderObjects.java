@@ -5,7 +5,7 @@ import Commands.Command;
 import ObjectSpecifications.*;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
@@ -25,6 +25,10 @@ public class LoaderObjects implements Command {
         try {
             boolean first=true;
             Scanner reader = new Scanner(new InputStreamReader(new FileInputStream(path)));
+            File file = new File(path);
+            if(!file.canRead()){
+                throw new NullPointerException();
+            }
             while (reader.hasNext()) {
                 String obj = reader.nextLine();
                 if(first){
@@ -53,7 +57,9 @@ public class LoaderObjects implements Command {
             }
         }catch (FileNotFoundException ex1) {
             System.out.println("Не удалось найти файл подгрузки данных");
-        }catch (JSONException ex2){
+        }catch (NullPointerException ex2){
+            System.out.println("у Файла нет прав на чтение");
+        }catch (JSONException ex3){
             System.out.println("Файл битый");
         }
     }

@@ -16,9 +16,9 @@ public class Client {
             filename = "resources/Data.json";
         }
         Scanner sc = new Scanner(System.in);//Scanner
-        HashMap<String, Command> commandHashMap = new HashMap<>();//Коллекция комманд
+        HashMap<String, Command> commandHashMap = new HashMap<String, Command>();//Коллекция комманд
         CommandsCollection commandsCollection = new CommandsCollection();//Класс для работы коллекции комманд
-        Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();//Коллекция HumanBeings
+        Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<Integer, HumanBeing>();//Коллекция HumanBeings
         CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable);//Класс для работы с коллекцией
         commandsCollection.setCommandHashtable(commandHashMap, collectionWorker, sc,filename);//Заполнение коммандами коллекции для комманд
         commandHashMap.get("load").runCommand(null);
