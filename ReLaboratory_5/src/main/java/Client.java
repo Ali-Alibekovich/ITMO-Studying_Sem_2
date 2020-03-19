@@ -11,9 +11,9 @@ public class Client {
     public static void main(String[] args) {
         String filename;
         if (args.length != 0) {
-            filename = "src\\main\\java\\Data\\" + args[0];
+            filename = "resources\\" + args[0];
         } else {
-            filename = "src\\main\\java\\Data\\Data.json";
+            filename = "resources\\Data.json";
         }
         Scanner sc = new Scanner(System.in);//Scanner
         HashMap<String, Command> commandHashMap = new HashMap<>();//Коллекция комманд
