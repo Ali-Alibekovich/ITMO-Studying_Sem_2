@@ -31,20 +31,20 @@ public class LoaderObjects implements Command {
             }
             JSONArray jsonArray = new JSONArray(reader.nextLine());
             for (int i=0; i<jsonArray.length(); i++) {
-                int key = jsonArray.getJSONArray(i).getJSONObject(0).getInt("key");
-                long id = Long.parseLong(jsonArray.getJSONArray(i).getJSONObject(0).getString("id"));
-                String name = jsonArray.getJSONArray(i).getJSONObject(0).getString("name");
-                int x = jsonArray.getJSONArray(i).getJSONObject(0).getJSONObject("coordinates").getInt("x");
-                double y = jsonArray.getJSONArray(i).getJSONObject(0).getJSONObject("coordinates").getInt("y");
+                int key = jsonArray.getJSONObject(i).getInt("key");
+                long id = Long.parseLong(jsonArray.getJSONObject(i).getString("id"));
+                String name = jsonArray.getJSONObject(i).getString("name");
+                int x = jsonArray.getJSONObject(i).getJSONObject("coordinates").getInt("x");
+                double y = jsonArray.getJSONObject(i).getJSONObject("coordinates").getInt("y");
                 Coordinates coordinates = new Coordinates(x,y);
-                boolean realHero = jsonArray.getJSONArray(i).getJSONObject(0).getBoolean("realHero");
-                boolean hasToothpick = jsonArray.getJSONArray(i).getJSONObject(0).getBoolean("hasToothpick");
-                double impactSpeed = jsonArray.getJSONArray(i).getJSONObject(0).getDouble("impactSpeed");
-                float minutesOfWaiting = jsonArray.getJSONArray(i).getJSONObject(0).getFloat("minutesOfWaiting");
-                WeaponType  weaponType = WeaponType.valueOf(jsonArray.getJSONArray(i).getJSONObject(0).getString("weaponType"));
-                Mood mood = Mood.valueOf(jsonArray.getJSONArray(i).getJSONObject(0).getString("mood"));
-                String nameCar = jsonArray.getJSONArray(i).getJSONObject(0).getJSONObject("car").getString("name");
-                boolean cool = jsonArray.getJSONArray(i).getJSONObject(0).getJSONObject("car").getBoolean("cool");
+                boolean realHero = jsonArray.getJSONObject(i).getBoolean("realHero");
+                boolean hasToothpick = jsonArray.getJSONObject(i).getBoolean("hasToothpick");
+                double impactSpeed = jsonArray.getJSONObject(i).getDouble("impactSpeed");
+                float minutesOfWaiting = jsonArray.getJSONObject(i).getFloat("minutesOfWaiting");
+                WeaponType  weaponType = WeaponType.valueOf(jsonArray.getJSONObject(i).getString("weaponType"));
+                Mood mood = Mood.valueOf(jsonArray.getJSONObject(i).getString("mood"));
+                String nameCar = jsonArray.getJSONObject(i).getJSONObject("car").getString("name");
+                boolean cool = jsonArray.getJSONObject(i).getJSONObject("car").getBoolean("cool");
                 Car car = new Car(nameCar,cool);
                 collection.put(key,new HumanBeing(id,name,coordinates,realHero,hasToothpick,impactSpeed,minutesOfWaiting,weaponType,mood,car));
             }
@@ -55,6 +55,8 @@ public class LoaderObjects implements Command {
             System.out.println("у Файла нет прав на чтение");
         }catch (NoSuchElementException ex3){
             System.out.println("Файл пуст");
+        }catch (JSONException ex4){
+            System.out.println("Файл пуст или ошибка в данных");
         }
     }
 

@@ -163,7 +163,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
     }
     @Override
     public String toString() {
-        return "[{" +
+        return "{" +
                 "\"id\":" +"\""+ id +"\"" +
                 ", \"key\":" + key +
                 ", \"name\":"+"\"" + name +"\"" +
@@ -175,7 +175,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
                 ", \"weaponType\":"+"\"" + weaponType +"\""+
                 ", \"mood\":" +"\""+ mood +"\""+
                 ", \"car\":" + car +
-                "}]";
+                "}";
     }
 
     public int getKey() {

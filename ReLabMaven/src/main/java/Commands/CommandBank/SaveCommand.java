@@ -41,6 +41,7 @@ public class SaveCommand implements Command {
                 }
             }
             fileWriter.close();
+            System.out.println("Данные сохранены");
         } catch (IOException e) {
             System.out.println("Файл не найден или недостаточно прав");
         }
