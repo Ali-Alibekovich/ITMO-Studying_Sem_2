@@ -19,7 +19,7 @@ public class LoaderObjects implements Command {
         collection=collectionWorker.getCollection();
         this.path=filename;
     }
-
+    //Just ReworkThisShit
     @Override
     public void runCommand(String[] s) {
         try {
