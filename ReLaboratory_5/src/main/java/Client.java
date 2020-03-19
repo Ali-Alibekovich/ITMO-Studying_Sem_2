@@ -9,13 +9,19 @@ import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
+        String filename;
+        if (args.length != 0) {
+            filename = "src\\main\\java\\Data\\" + args[0];
+        } else {
+            filename = "src\\main\\java\\Data\\Data.json";
+        }
         Scanner sc = new Scanner(System.in);//Scanner
         HashMap<String, Command> commandHashMap = new HashMap<>();//Коллекция комманд
         CommandsCollection commandsCollection = new CommandsCollection();//Класс для работы коллекции комманд
         Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();//Коллекция HumanBeings
         CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable);//Класс для работы с коллекцией
         commandsCollection.setCommandHashtable(commandHashMap, collectionWorker, sc);//Заполнение коммандами коллекции для комманд
-        commandHashMap.get("load").runCommand(null);
+        commandHashMap.get("load").runCommand(filename.split(" "));
         CommandsReader commandsReader = new CommandsReader(commandHashMap, sc);
         commandsReader.runCommand(null);
     }

@@ -55,7 +55,6 @@ public class HumanBeing implements Comparable<HumanBeing> {
                 "  id=" + id +",\n"+
                 "  name='" + name + '\'' +",\n"+
                 coordinates.getAllParam() +",\n"+
-                "  creationDate=" + creationDate +",\n"+
                 "  realHero=" + realHero +",\n"+
                 "  hasToothpick=" + hasToothpick +",\n"+
                 "  impactSpeed=" + impactSpeed +",\n"+
@@ -164,7 +163,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
     }
     @Override
     public String toString() {
-        return "{\"HumanBeing\":{" +
+        return "\"HumanBeing\":{" +
                 "\"id\":" +"\""+ id +"\"" +
                 ", \"key\":" + key +
                 ", \"name\":"+"\"" + name +"\"" +
@@ -176,7 +175,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
                 ", \"weaponType\":"+"\"" + weaponType +"\""+
                 ", \"mood\":" +"\""+ mood +"\""+
                 ", \"car\":" + car +
-                "}}\n";
+                "}";
     }
 
     public int getKey() {

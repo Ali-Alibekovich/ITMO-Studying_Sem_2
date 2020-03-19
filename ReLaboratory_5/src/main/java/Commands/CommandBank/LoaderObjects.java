@@ -3,6 +3,7 @@ package Commands.CommandBank;
 import CollectionWorker.CollectionWorker;
 import Commands.Command;
 import ObjectSpecifications.*;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.FileInputStream;
@@ -12,7 +13,6 @@ import java.util.Hashtable;
 import java.util.Scanner;
 
 public class LoaderObjects implements Command {
-    InputStreamReader fileReader;
     Hashtable <Integer, HumanBeing> collection;
     public LoaderObjects(CollectionWorker collectionWorker) {
         collection=collectionWorker.getCollection();
@@ -21,9 +21,16 @@ public class LoaderObjects implements Command {
     @Override
     public void runCommand(String[] s) {
         try {
-            Scanner reader = new Scanner(new InputStreamReader(new FileInputStream("src\\main\\java\\Data\\Collection.txt")));
+            boolean first=true;
+            Scanner reader = new Scanner(new InputStreamReader(new FileInputStream(s[0])));
             while (reader.hasNext()) {
                 String obj = reader.nextLine();
+                if(first){
+                    obj=obj+"}";
+                    first=false;
+                }else{
+                    obj="{"+obj+"}";
+                }
                 JSONObject userJson = new JSONObject(obj);
                 int key = userJson.getJSONObject("HumanBeing").getInt("key");
                 long id = Long.parseLong(userJson.getJSONObject("HumanBeing").getString("id"));
@@ -44,6 +51,13 @@ public class LoaderObjects implements Command {
             }
         }catch (FileNotFoundException ex1) {
             System.out.println("Не удалось найти файл подгрузки данных");
+        }catch (JSONException ex2){
+            System.out.println("Файл битый");
         }
+    }
+
+    @Override
+    public String toString() {
+        return null;
     }
 }

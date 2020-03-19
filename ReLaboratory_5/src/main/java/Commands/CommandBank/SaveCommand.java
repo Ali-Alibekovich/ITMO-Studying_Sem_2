@@ -19,13 +19,22 @@ public class SaveCommand implements Command {
     @Override
     public void runCommand(String[] s) {
         try {
-            File file = new File("src\\main\\java\\Data\\Collection.txt");
-            fileWriter=new FileWriter("src\\main\\java\\Data\\Collection.txt");
+            File file = new File("src\\main\\java\\Data\\Data.json");
+            fileWriter=new FileWriter("src\\main\\java\\Data\\Data.json");
             if(!file.canWrite()){
                 throw new IOException();
             }
+            int i=0;
+            fileWriter.append("{");
             for (Integer key:collection.keySet()){
-                fileWriter.append(collection.get(key).toString());
+                i++;
+                if(collection.size()==i){
+                    collection.get(key).setKey(key);
+                    fileWriter.append(collection.get(key).toString()).append("}");
+                }else {
+                    collection.get(key).setKey(key);
+                    fileWriter.append(collection.get(key).toString()).append(",\n");
+                }
             }
             System.out.println("Файл успешно сохранен");
             fileWriter.close();
