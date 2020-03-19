@@ -6,25 +6,24 @@ import ObjectSpecifications.HumanBeing;
 
 import java.util.Hashtable;
 
-public class ShowCommand implements Command {
-    Hashtable <Integer, HumanBeing> collection;
-    public ShowCommand(CollectionWorker collectionWorker) {
+public class ClearCommand implements Command {
+    Hashtable<Integer, HumanBeing> collection;
+    public ClearCommand(CollectionWorker collectionWorker) {
         collection=collectionWorker.getCollection();
     }
 
     @Override
     public void runCommand(String[] s) {
-        if(collection.keySet().isEmpty()){
+        if(collection.isEmpty()){
             System.out.println("Коллекция пуста");
         }else {
-            for (Integer key : collection.keySet()) {
-                System.out.println(collection.get(key).getAllParam());
-            }
+            collection.clear();
+            System.out.println("Коллекция очищена");
         }
     }
 
     @Override
     public String toString() {
-        return "Команда Show";
+        return "Команда Clear";
     }
 }

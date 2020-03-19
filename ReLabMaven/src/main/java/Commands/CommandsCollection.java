@@ -18,5 +18,6 @@ public class CommandsCollection {
         commandHashMap.put("save",new SaveCommand(collectionWorker,filename));
         commandHashMap.put("show",new ShowCommand(collectionWorker));
         commandHashMap.put("load",new LoaderObjects(collectionWorker,filename));
+        commandHashMap.put("clear",new ClearCommand(collectionWorker));
     }
 }
