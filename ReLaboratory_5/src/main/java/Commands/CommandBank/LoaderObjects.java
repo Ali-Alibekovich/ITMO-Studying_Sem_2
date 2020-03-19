@@ -14,15 +14,17 @@ import java.util.Scanner;
 
 public class LoaderObjects implements Command {
     Hashtable <Integer, HumanBeing> collection;
-    public LoaderObjects(CollectionWorker collectionWorker) {
+    String path;
+    public LoaderObjects(CollectionWorker collectionWorker, String filename) {
         collection=collectionWorker.getCollection();
+        this.path=filename;
     }
 
     @Override
     public void runCommand(String[] s) {
         try {
             boolean first=true;
-            Scanner reader = new Scanner(new InputStreamReader(new FileInputStream(s[0])));
+            Scanner reader = new Scanner(new InputStreamReader(new FileInputStream(path)));
             while (reader.hasNext()) {
                 String obj = reader.nextLine();
                 if(first){

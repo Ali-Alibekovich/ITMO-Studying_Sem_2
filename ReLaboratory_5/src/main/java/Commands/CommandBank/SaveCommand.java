@@ -12,15 +12,17 @@ import java.util.Hashtable;
 public class SaveCommand implements Command {
     FileWriter fileWriter;
     Hashtable<Integer,HumanBeing> collection;
-    public SaveCommand(CollectionWorker collectionWorker) {
+    String path;
+    public SaveCommand(CollectionWorker collectionWorker, String filename) {
         collection=collectionWorker.getCollection();
+        this.path=filename;
     }
 
     @Override
     public void runCommand(String[] s) {
         try {
-            File file = new File("src\\main\\java\\Data\\Data.json");
-            fileWriter=new FileWriter("src\\main\\java\\Data\\Data.json");
+            File file = new File(path);
+            fileWriter=new FileWriter(path);
             if(!file.canWrite()){
                 throw new IOException();
             }
