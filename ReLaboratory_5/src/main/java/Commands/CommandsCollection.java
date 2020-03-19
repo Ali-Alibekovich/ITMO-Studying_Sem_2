@@ -15,6 +15,8 @@ public class CommandsCollection {
         commandHashMap.put("history",new HistoryCommand());
         commandHashMap.put("remove_key",new RemoveByKey(collectionWorker));
         commandHashMap.put("execute_script",new Execute_script(collectionWorker,commandHashMap));
+        commandHashMap.put("save",new SaveCommand(collectionWorker));
         commandHashMap.put("show",new ShowCommand(collectionWorker));
+        commandHashMap.put("load",new LoaderObjects(collectionWorker));
     }
 }

@@ -14,9 +14,15 @@ public class Car {
         return cool;
     }
 
-    Car(String name, boolean cool){
+    public Car(String name, boolean cool){
         this.name = Objects.requireNonNull(name,"invalid name");
         this.cool=cool;
+    }
+    public String getAllParam(){
+        return "Car{" +"\n"+
+                "  \tname='" + name + '\'' +",\n"+
+                "  \tcool=" + cool +",\n"+
+                "}";
     }
 
     @Override

@@ -30,7 +30,19 @@ public class HumanBeing implements Comparable<HumanBeing> {
         this.mood=mood;
         this.car=car;
     }
-
+    public HumanBeing(Long id,String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
+        ZonedDateTime creationDate = ZonedDateTime.now();
+        this.id = id;
+        this.name=name;
+        this.coordinates=coordinates;
+        this.realHero=realHero;
+        this.hasToothpick=hasToothpick;
+        this.impactSpeed=impactSpeed;
+        this.minutesOfWaiting=minutesOfWaiting;
+        this.weaponType=weaponType;
+        this.mood=mood;
+        this.car=car;
+    }
     private Long getId() {
         return id;
     }
@@ -38,7 +50,21 @@ public class HumanBeing implements Comparable<HumanBeing> {
     public String getName() {
         return name;
     }
-
+    public String getAllParam(){
+        return "HumanBeing{" +"\n"+
+                "  id=" + id +",\n"+
+                "  name='" + name + '\'' +",\n"+
+                coordinates.getAllParam() +",\n"+
+                "  creationDate=" + creationDate +",\n"+
+                "  realHero=" + realHero +",\n"+
+                "  hasToothpick=" + hasToothpick +",\n"+
+                "  impactSpeed=" + impactSpeed +",\n"+
+                "  minutesOfWaiting=" + minutesOfWaiting +",\n"+
+                "  weaponType=" + weaponType +",\n"+
+                "  mood=" + mood +",\n"+
+                car.getAllParam() +",\n"+
+                '}';
+    }
     public Coordinates getCoordinates() {
         return coordinates;
     }
@@ -136,10 +162,9 @@ public class HumanBeing implements Comparable<HumanBeing> {
             return 1;
         }
     }
-
     @Override
     public String toString() {
-        return "\"HumanBeing\":{" +
+        return "{\"HumanBeing\":{" +
                 "\"id\":" +"\""+ id +"\"" +
                 ", \"key\":" + key +
                 ", \"name\":"+"\"" + name +"\"" +
@@ -151,7 +176,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
                 ", \"weaponType\":"+"\"" + weaponType +"\""+
                 ", \"mood\":" +"\""+ mood +"\""+
                 ", \"car\":" + car +
-                "},";
+                "}}\n";
     }
 
     public int getKey() {

@@ -28,6 +28,7 @@ public class CollectionWorker implements Collection {
         return collection.size();
     }
 
+
     public Hashtable<Integer, HumanBeing> getCollection() {
         return collection;
     }

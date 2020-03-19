@@ -15,6 +15,12 @@ public class Coordinates {
         this.x=x;
         this.y=y;
     }
+    public String getAllParam(){
+        return "Coordinates{" +"\n"+
+                "  \tx=" + x +",\n"+
+                "  \ty=" + y +",\n"+
+                "}";
+    }
 
     @Override
     public String toString() {

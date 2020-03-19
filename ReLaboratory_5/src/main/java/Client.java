@@ -3,7 +3,6 @@ import Commands.Command;
 import Commands.CommandsCollection;
 import Commands.CommandBank.CommandsReader;
 import ObjectSpecifications.HumanBeing;
-
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Scanner;
@@ -16,6 +15,7 @@ public class Client {
         Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();//Коллекция HumanBeings
         CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable);//Класс для работы с коллекцией
         commandsCollection.setCommandHashtable(commandHashMap, collectionWorker, sc);//Заполнение коммандами коллекции для комманд
+        commandHashMap.get("load").runCommand(null);
         CommandsReader commandsReader = new CommandsReader(commandHashMap, sc);
         commandsReader.runCommand(null);
     }

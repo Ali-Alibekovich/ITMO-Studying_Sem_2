@@ -18,7 +18,7 @@ public class ShowCommand implements Command {
             System.out.println("Коллекция пуста");
         }else {
             for (Integer key : collection.keySet()) {
-                System.out.println(collection.get(key));
+                System.out.println(collection.get(key).getAllParam());
             }
         }
     }
