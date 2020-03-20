@@ -18,7 +18,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
     private int key;
 
     public HumanBeing(String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
-        ZonedDateTime creationDate = ZonedDateTime.now();
+        this.creationDate = ZonedDateTime.now();
         this.id = UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE;
         this.name=name;
         this.coordinates=coordinates;
@@ -31,7 +31,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
         this.car=car;
     }
     public HumanBeing(Long id,String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
-        ZonedDateTime creationDate = ZonedDateTime.now();
+        this.creationDate = ZonedDateTime.now();
         this.id = id;
         this.name=name;
         this.coordinates=coordinates;
@@ -67,6 +67,11 @@ public class HumanBeing implements Comparable<HumanBeing> {
     public Coordinates getCoordinates() {
         return coordinates;
     }
+
+    public ZonedDateTime getCreationDate() {
+        return creationDate;
+    }
+
     public Boolean getRealHero() {
         return realHero;
     }
@@ -176,10 +181,6 @@ public class HumanBeing implements Comparable<HumanBeing> {
                 ", \"mood\":" +"\""+ mood +"\""+
                 ", \"car\":" + car +
                 "}";
-    }
-
-    public int getKey() {
-        return key;
     }
 
     public void setKey(int key) {

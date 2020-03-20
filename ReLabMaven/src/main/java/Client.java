@@ -1,5 +1,6 @@
 import CollectionWorker.CollectionWorker;
 import Commands.Command;
+import Commands.CommandBank.JsonLoader.ObjectReader;
 import Commands.CommandsCollection;
 import Commands.CommandBank.CommandsReader;
 import ObjectSpecifications.HumanBeing;
@@ -16,9 +17,9 @@ public class Client {
             filename = "resources/Data.json";
         }
         Scanner sc = new Scanner(System.in);//Scanner
-        HashMap<String, Command> commandHashMap = new HashMap<String, Command>();//Коллекция комманд
+        HashMap<String, Command> commandHashMap = new HashMap<>();//Коллекция комманд
         CommandsCollection commandsCollection = new CommandsCollection();//Класс для работы коллекции комманд
-        Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<Integer, HumanBeing>();//Коллекция HumanBeings
+        Hashtable<Integer, HumanBeing> humanBeingHashtable = new Hashtable<>();//Коллекция HumanBeings
         CollectionWorker collectionWorker = new CollectionWorker(humanBeingHashtable);//Класс для работы с коллекцией
         commandsCollection.setCommandHashtable(commandHashMap, collectionWorker, sc,filename);//Заполнение коммандами коллекции для комманд
         commandHashMap.get("load").runCommand(null);
