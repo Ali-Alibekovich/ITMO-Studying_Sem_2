@@ -1,10 +1,7 @@
 package Commands.CommandBank.JsonLoader;
 
-import CollectionWorker.Collection;
 import ObjectSpecifications.*;
 import org.json.JSONArray;
-
-import java.time.ZonedDateTime;
 import java.util.Hashtable;
 
 public class ObjectReader implements Fields {
@@ -18,18 +15,11 @@ public class ObjectReader implements Fields {
     }
     public void getObjects(){
         for (this.i=0; i<jsonArray.length(); i++) {
-            int key = getInt("key");
-            long id = getLong("id");
-            String name=getString("name");
-            Coordinates coordinates = Coordinates();
-            boolean realHero = getBoolean("realHero");
-            boolean hasToothpick = getBoolean("hasToothpick");
-            double impactSpeed = getDouble("impactSpeed");
-            float minutesOfWaiting = getFloat("minutesOfWaiting");
-            WeaponType weaponType = WeaponType.valueOf(getString("weaponType"));
-            Mood mood = Mood.valueOf(getString("mood"));
-            Car car = car();
-            collection.put(key,new HumanBeing(id,name,coordinates,realHero,hasToothpick,impactSpeed,minutesOfWaiting,weaponType,mood,car));
+            collection.put(getInt("key"),new HumanBeing( getLong("id"), getInt("key"),
+                           getString("name"), coordinates(), getBoolean("realHero"), getBoolean("hasToothpick"),
+                           getDouble("impactSpeed"), getFloat("minutesOfWaiting"),
+                           WeaponType.valueOf(getString("weaponType")), Mood.valueOf(getString("mood")), car())
+            );
         }
     }
 
@@ -38,14 +28,19 @@ public class ObjectReader implements Fields {
         boolean cool=jsonArray.getJSONObject(i).getJSONObject("car").getBoolean("cool");
         return new Car(name,cool);
     }
-    public Coordinates Coordinates (){
+
+
+    public Coordinates coordinates (){
         int x = jsonArray.getJSONObject(i).getJSONObject("coordinates").getInt("x");
         double y = jsonArray.getJSONObject(i).getJSONObject("coordinates").getDouble("x");
         return new Coordinates(x,y);
     }
+
+    @Override
     public long getLong(String s){
         return jsonArray.getJSONObject(i).getLong(s);
     }
+
     @Override
     public int getInt(String s) {
         return jsonArray.getJSONObject(i).getInt(s);

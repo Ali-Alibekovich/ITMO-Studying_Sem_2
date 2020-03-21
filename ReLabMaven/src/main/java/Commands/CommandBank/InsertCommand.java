@@ -20,17 +20,8 @@ public class InsertCommand implements Command {
 
     @Override
     public void runCommand(String[] s){
-        int key;
         try{
-            key=Integer.parseInt(s[1]);
-            if(!s[2].toLowerCase().equals("humanbeing")){
-                throw new NullPointerException();
-            }else {
-                collection.put(key,new HumanReader().readHuman(sc));
-                collection.get(key).setKey(key);
-                System.out.println("Объект создан");
-            }
-
+            insertHuman(s);
         }catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Неправильные аргументы команды");
             setCatcherError(true);
@@ -42,6 +33,21 @@ public class InsertCommand implements Command {
             setCatcherError(true);
         }
     }
+
+
+
+    public void insertHuman(String[] s)throws  ArrayIndexOutOfBoundsException,NullPointerException,NumberFormatException{
+        int key;
+        key=Integer.parseInt(s[1]);
+        if(!s[2].toLowerCase().equals("humanbeing")){
+            throw new NullPointerException();
+        }else {
+            collection.put(key,new HumanReader().readHuman(sc));
+            collection.get(key).setKey(key);
+            System.out.println("Объект создан");
+        }
+    }
+
 
     @Override
     public String toString() {

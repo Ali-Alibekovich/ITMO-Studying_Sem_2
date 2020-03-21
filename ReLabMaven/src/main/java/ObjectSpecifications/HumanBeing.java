@@ -30,8 +30,9 @@ public class HumanBeing implements Comparable<HumanBeing> {
         this.mood=mood;
         this.car=car;
     }
-    public HumanBeing(Long id,String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
+    public HumanBeing(Long id,int key,String name, Coordinates coordinates, Boolean realHero, Boolean hasToothpick, Double impactSpeed, Float minutesOfWaiting, WeaponType weaponType, Mood mood, Car car){
         this.creationDate = ZonedDateTime.now();
+        this.key=key;
         this.id = id;
         this.name=name;
         this.coordinates=coordinates;
@@ -53,6 +54,7 @@ public class HumanBeing implements Comparable<HumanBeing> {
     public String getAllParam(){
         return "HumanBeing{" +"\n"+
                 "  id=" + id +",\n"+
+                "  key="+key+",\n"+
                 "  name='" + name + '\'' +",\n"+
                 coordinates.getAllParam() +",\n"+
                 "  realHero=" + realHero +",\n"+

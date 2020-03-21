@@ -6,4 +6,5 @@ public interface Fields {
     float getFloat(String s);
     String getString(String s);
     double getDouble(String s);
+    long getLong(String s);
 }

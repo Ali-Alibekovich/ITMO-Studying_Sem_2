@@ -12,8 +12,15 @@ public class ShowCommand implements Command {
         collection=collectionWorker.getCollection();
     }
 
+
     @Override
     public void runCommand(String[] s) {
+        showingCollection();
+    }
+
+
+
+    public void showingCollection(){
         if(collection.keySet().isEmpty()){
             System.out.println("Коллекция пуста");
         }else {

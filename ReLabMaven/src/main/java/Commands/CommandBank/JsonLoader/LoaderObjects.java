@@ -23,11 +23,11 @@ public class LoaderObjects implements Command {
     @Override
     public void runCommand(String[] s) {
         try {
-            Scanner reader = new Scanner(new InputStreamReader(new FileInputStream(path)));
             File file = new File(path);
             if(!file.canRead()){
                 throw new NullPointerException();
             }
+            Scanner reader = new Scanner(new InputStreamReader(new FileInputStream(path)));
             JSONArray jsonArray = new JSONArray(reader.nextLine());
             ObjectReader objectReader=new ObjectReader(jsonArray,collection);
             objectReader.getObjects();
