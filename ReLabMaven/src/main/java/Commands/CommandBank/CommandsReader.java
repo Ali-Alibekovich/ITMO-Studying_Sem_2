@@ -19,7 +19,7 @@ public class CommandsReader implements Command {
                 "Чтобы получить список команд введите help");
         while (true) {
             try {
-                runCommand();
+                runner();
             } catch (NoSuchElementException ex) {
                 System.out.println("Экстренный выход из коммандной строки");
                 System.exit(0);
@@ -31,9 +31,8 @@ public class CommandsReader implements Command {
         }
     }
 
-    public void runCommand()throws NoSuchElementException,NullPointerException{
-        String[] scannedCommand;
-        scannedCommand = sc.nextLine().toLowerCase().split(" ");
+    public void runner()throws NoSuchElementException,NullPointerException {
+        String[] scannedCommand = sc.nextLine().toLowerCase().split(" ");
         commandsCollection.get(scannedCommand[0]).runCommand(scannedCommand);
         HistoryCommand.saveCommand(commandsCollection.get(scannedCommand[0]).toString());
     }

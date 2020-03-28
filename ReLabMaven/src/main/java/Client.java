@@ -9,12 +9,7 @@ import java.util.Scanner;
 
 public class Client {
     public static void main(String[] args) {
-        String filename;
-        if (args.length != 0) {
-            filename = "resources/" + args[0];
-        } else {
-            filename = "resources/Data.json";
-        }
+
         Scanner sc = new Scanner(System.in);//Scanner
         HashMap<String, Command> commandHashMap = new HashMap<>();//Коллекция комманд
         CommandsCollection commandsCollection = new CommandsCollection();//Класс для работы коллекции комманд

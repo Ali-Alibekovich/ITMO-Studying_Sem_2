@@ -3,11 +3,14 @@ package Commands;
 import CollectionWorker.CollectionWorker;
 import Commands.CommandBank.*;
 import Commands.CommandBank.JsonLoader.LoaderObjects;
+import ObjectSpecifications.HumanBeing;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Scanner;
 
 public class CommandsCollection {
+
     public void setCommandHashtable(HashMap<String, Command> commandHashMap, CollectionWorker collectionWorker, Scanner sc, String filename) {
         commandHashMap.put("help",new HelpCommand());
         commandHashMap.put("info",new InfoCommand(collectionWorker));

@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d0080fc-f73b-434b-9c31-91e98db2927a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ReLaboratory_5/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ReLabMaven/resources/exec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/CommandsReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/CommandsReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/Execute_script.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/Execute_script.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/InsertCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/InsertCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandsCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandsCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/CommandsReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/CommandsReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/Execute_script.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/Execute_script.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/HistoryCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/HistoryCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/InsertCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/InsertCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/RemoveByKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/RemoveByKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/SaveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/ShowCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/ShowCommand.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +53,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/HumanBeings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -130,6 +141,7 @@
       <workItem from="1584017863875" duration="773000" />
       <workItem from="1584033976628" duration="230000" />
       <workItem from="1584089211943" duration="3428000" />
+      <workItem from="1585224985891" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1581694388559</created>

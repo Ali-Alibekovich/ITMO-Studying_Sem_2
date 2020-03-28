@@ -1,0 +1,14 @@
+insert 25 humanbeing
+ad
+241
+32
+true
+true
+213
+13
+hammer
+weq
+true
+gloom
+show
+execute_script sdsada

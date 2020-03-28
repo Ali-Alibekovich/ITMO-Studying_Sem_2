@@ -34,8 +34,6 @@ public class InsertCommand implements Command {
         }
     }
 
-
-
     public void insertHuman(String[] s)throws  ArrayIndexOutOfBoundsException,NullPointerException,NumberFormatException{
         int key;
         key=Integer.parseInt(s[1]);
@@ -47,7 +45,6 @@ public class InsertCommand implements Command {
             System.out.println("Объект создан");
         }
     }
-
 
     @Override
     public String toString() {
