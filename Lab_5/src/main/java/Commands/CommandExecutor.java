@@ -17,15 +17,16 @@ public class CommandExecutor {
     public void executeCommand(String[] commandName){
         try {
             if (commandName.length > 0) {
+                if(getScriptIsRunning()){
+                    System.out.println(commandName[0]);
+                }
                 CommandIF command = commandMap.get(commandName[0]);
                 command.execute(commandName);
                 saveCommand(commandMap.get(commandName[0]).infoCommand());
             } else {
-                if(!getScriptIsRunning())
                 System.out.println("Вы не ввели команду.");
             }
         } catch (IllegalStateException | NullPointerException ex) {
-            if(!getScriptIsRunning())
             System.out.println("Не существует команды " + commandName[0] + ". Для справки используйте – help");
         }
     }

@@ -29,6 +29,9 @@ public class LoaderObjects implements CommandIF {
     public void execute(String[] s) {
         try {
             File file = new File(path);
+            if(!file.isFile()){
+                throw new FileNotFoundException();
+            }
             if(!file.canRead()){
                 throw new NullPointerException();
             }

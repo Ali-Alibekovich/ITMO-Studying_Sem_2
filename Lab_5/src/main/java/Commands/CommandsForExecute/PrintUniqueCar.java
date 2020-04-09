@@ -1,7 +1,12 @@
 package Commands.CommandsForExecute;
 
+import BasicClasses.Car;
 import BasicClasses.HumanBeing;
-import java.util.Hashtable;
+import BasicClasses.HumanReader;
+import jdk.nashorn.internal.objects.ArrayBufferView;
+
+import java.lang.reflect.Array;
+import java.util.*;
 
 /**
  * Класс отвечающий за команду print_unique_car
@@ -16,10 +21,14 @@ public class PrintUniqueCar implements CommandIF {
     @Override
     public void execute(String[] args) {
         if(args.length>1){
-            System.out.println("Ведены неверные аргументы команды. Команда приведена к базовой print_unique_car");
+            System.out.println("Введены неверные аргументы команды. Команда приведена к базовой print_unique_car");
         }else {
+            HashSet<String> cars = new HashSet<>();
             for (Integer key : collection.keySet()) {
-                    System.out.println("HumanBeing with key - " + collection.get(key).getKey() + "\n" + collection.get(key).getCar().getAllParam());
+                cars.add(collection.get(key).getCar().getAllParam());
+            }
+            for (String car : cars) {
+                System.out.println(car);
             }
         }
     }

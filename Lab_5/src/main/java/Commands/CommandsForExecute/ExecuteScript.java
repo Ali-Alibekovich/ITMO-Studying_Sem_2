@@ -3,9 +3,14 @@ package Commands.CommandsForExecute;
 import BasicClasses.HumanBeing;
 import Collection.CollectionManager;
 import Commands.CommandExecutor;
+
+import javax.annotation.processing.FilerException;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.nio.channels.FileLock;
 import java.util.Hashtable;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -47,7 +52,9 @@ public class ExecuteScript implements CommandIF{
         }catch (StackOverflowError ex1){
             System.out.println("Обнаружено переполнение стека, вероятнее всего команда execute_script вызывает саму себя");
         }catch (FileNotFoundException ex){
-            System.out.println("У файла нет прав на чтение.");
+            System.out.println("Файл не найден");
+        }catch (NoSuchFieldException ex2){
+            System.out.println("У файла нет прав на чтение");
         }
     }
 
@@ -62,14 +69,17 @@ public class ExecuteScript implements CommandIF{
      * @param args принимает путь файла и проверяет его на возможность чтения и расширение.
      * @throws FileNotFoundException возращает ошибку если нет прав на чтение
      */
-    private void validatePath(String[] args) throws FileNotFoundException {
+    private void validatePath(String[] args) throws NoSuchFieldException, FileNotFoundException {
         if(!args[1].contains(".txt")){
             args[1]=args[1]+".txt";
         }
         path=args[1];
         File file = new File("resources/"+path);
-        if(!file.canRead()){
+        if(!file.isFile()){
             throw new FileNotFoundException();
+        }
+        if(!file.canRead()){
+            throw new NoSuchFieldException();
         }
     }
 }

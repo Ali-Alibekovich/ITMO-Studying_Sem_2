@@ -22,7 +22,7 @@ public class PrintAscending implements CommandIF {
         }else {
             TreeSet<Integer> keys = new TreeSet<>(collection.keySet());
             for (Integer key : keys) {
-                System.out.println(collection.get(key));
+                System.out.println(collection.get(key).getAllParam());
             }
         }
     }

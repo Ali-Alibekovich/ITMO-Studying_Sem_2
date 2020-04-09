@@ -32,7 +32,7 @@ public class InsertCommand implements CommandIF {
             if(!getScriptIsRunning())
             System.out.println("Неверный формат ключв");
         }catch (NullPointerException ex1){
-            System.out.println("Найдена ошибка в данных при считывании HumanBeing. Скрипт был выполнен, но объект не создан");
+            System.out.println("Найдена ошибка в данных при считывании HumanBeing.Объект не создан");
         }
     }
 

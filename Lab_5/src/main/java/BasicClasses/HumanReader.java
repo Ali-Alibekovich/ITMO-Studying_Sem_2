@@ -1,6 +1,8 @@
 package BasicClasses;
 
 import Collection.IDGenerator;
+
+import java.awt.*;
 import java.util.Date;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -65,8 +67,10 @@ public class HumanReader{
         }
         if( getScriptIsRunning() && !catcherError){
             return null;
+        }else {
+            System.out.println("Объект создан");
+            return new HumanBeing(name, coordinates, realHero, hasToothpick, impactSpeed, minutesOfWaiting, weaponType, mood, car);
         }
-        return new HumanBeing(name, coordinates, realHero, hasToothpick, impactSpeed, minutesOfWaiting, weaponType, mood, car);
     }
 
 
@@ -76,7 +80,7 @@ public class HumanReader{
     private Car readerCar(Scanner sc) {
         String name;
         boolean cool;
-        name = readerName("Введите значение name у Car:",sc);
+        name = readerName("Введите значение name у Car:", sc);
         cool = readerBoolean("Введите значение cool(True/False) у Car:", sc);
         return new Car(name, cool);
     }
@@ -86,23 +90,47 @@ public class HumanReader{
     private Coordinates readerCoordinates(Scanner sc) {
         long x;
         float y;
-        x = readerLong("Введите координату x:", sc);
-        y = readerFloat("Введите координату y:", sc);
-        return new Coordinates(x, y);
+        while (true) {
+            x = readerLong("Введите координату x:", sc);
+            y = readerFloat("Введите координату y:", sc);
+            if (xCoordinate || yCoordinate) {
+                if (!getScriptIsRunning())
+                System.out.println("Coordinates is empty. Created new Coordinates with x=0 and y=0");
+                return new Coordinates(0,0);
+            }else {
+                return new Coordinates(x,y);
+            }
+        }
+
     }
     /**
      * @return возращает переменную типа long
      */
+    static boolean xCoordinate;
     private long readerLong(String request, Scanner sc) {
+        xCoordinate=false;
         if(!getScriptIsRunning())
         System.out.println(request);
         if(getScriptIsRunning())
         checker = getCatcherError();
-        long value = 0;
+        long value=0;
         while (checker) {
             try {
                 String strValue = sc.nextLine();
-                value = Long.parseLong(strValue);
+                if(request.contains("impactSpeed")) {
+                    value = Long.parseLong(strValue);
+                    if (value <= -680) {
+                        if (getScriptIsRunning())
+                            setCatcherError(false);
+                        throw new NumberFormatException();
+                    }
+                }else {
+                    if (strValue.equals("")) {
+                        xCoordinate = true;
+                    } else {
+                        value = Long.parseLong(strValue);
+                    }
+                }
                 break;
             } catch (NumberFormatException ex) {
                 if (!getScriptIsRunning())
@@ -197,7 +225,9 @@ public class HumanReader{
     /**
      * @return возращает переменную типа float
      */
+    boolean yCoordinate;
     private Float readerFloat(String request, Scanner sc) {
+        yCoordinate=false;
         if(!getScriptIsRunning())
         System.out.println(request);
         if(getScriptIsRunning())
@@ -205,13 +235,19 @@ public class HumanReader{
         float value = 0;
         while (checker) {
             try {
-                value = Float.parseFloat(sc.nextLine());
+                String strValue = sc.nextLine();
+                if (strValue.equals("")) {
+                    yCoordinate = true;
+                } else {
+                    value = Long.parseLong(strValue);
+                }
                 break;
             } catch (NumberFormatException e) {
                 if(!getScriptIsRunning())
                 System.out.println("Введите корректное значение");
                 if(getScriptIsRunning())
                 setCatcherError(false);
+                break;
             }
         }
         return value;

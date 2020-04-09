@@ -1,7 +1,7 @@
-insert 25 humanbeing
+insert 25
 ad
-241
-32
+
+
 true
 true
 213
@@ -11,4 +11,3 @@ weq
 true
 gloom
 show
-execute_script sdsada
