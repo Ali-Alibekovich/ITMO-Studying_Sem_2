@@ -1,137 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="378ca8be-e34c-45a9-86a4-56a62d53e705" name="Default Changelist" comment="Finished">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/Course.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Course/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="378ca8be-e34c-45a9-86a4-56a62d53e705" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sdsada.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sdsada.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BasicClasses/HumanReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BasicClasses/HumanReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CommandExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/ExecuteScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/InsertCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/InsertCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/JsonLoader/LoaderObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/JsonLoader/LoaderObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/PrintAscending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/PrintAscending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/PrintUniqueCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Commands/CommandsForExecute/PrintUniqueCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ReLabMaven-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ReLabMaven-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ReLabMaven-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ReLabMaven-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BasicClasses/HumanReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BasicClasses/HumanReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/CommandExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/CommandExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/ExecuteScript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/ExecuteScript.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/InsertCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/InsertCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/JsonLoader/LoaderObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/JsonLoader/LoaderObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/PrintAscending.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/PrintAscending.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/PrintUniqueCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Commands/CommandsForExecute/PrintUniqueCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Lab_5.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/Programming_Lab5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/Collection/MyCollection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/Commands/CommandsBank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/Commands/InterfaceCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/Commands/executeScript.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/Commands/helpCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/HumanBeings/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/HumanBeings/Coordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/HumanBeings/HumanBeing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/HumanBeings/HumanReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/HumanBeings/Mood.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/HumanBeings/WeaponType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/out/production/Programming_Lab5/META-INF/Programming_Lab5.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/Collection/MyCollection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/Commands/CommandsBank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/Commands/InterfaceCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/Commands/executeScript.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/Commands/helpCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/HumanBeings/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/HumanBeings/Coordinates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/HumanBeings/HumanBeing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/HumanBeings/HumanReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/HumanBeings/Mood.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/src/HumanBeings/WeaponType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Programming_Lab5/Лабораторная работа.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/ReLabMaven.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/resources/Data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/resources/exec.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/CollectionWorker/Collection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/CollectionWorker/CollectionWorker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/ClearCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/CommandsReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/Execute_script.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/ExitCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/HelpCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/HistoryCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/InfoCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/InsertCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/JsonLoader/Fields.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/JsonLoader/LoaderObjects.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/JsonLoader/ObjectReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/RemoveByKey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/SaveCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandBank/ShowCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/Commands/CommandsCollection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/ObjectSpecifications/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/ObjectSpecifications/Coordinates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/ObjectSpecifications/HumanBeing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/ObjectSpecifications/HumanReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/ObjectSpecifications/Mood.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/src/main/java/ObjectSpecifications/WeaponType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/ReLabMaven-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/ReLabMaven-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/CollectionWorker/Collection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/CollectionWorker/CollectionWorker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/ClearCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/CommandsReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/Execute_script.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/ExitCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/HelpCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/HistoryCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/InfoCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/InsertCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/JsonLoader/Fields.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/JsonLoader/LoaderObjects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/JsonLoader/ObjectReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/RemoveByKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/SaveCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandBank/ShowCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/Commands/CommandsCollection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/META-INF/ReLabMaven.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/ObjectSpecifications/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/ObjectSpecifications/Coordinates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/ObjectSpecifications/HumanBeing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/ObjectSpecifications/HumanReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/ObjectSpecifications/Mood.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/classes/ObjectSpecifications/WeaponType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReLabMaven/target/test-classes/META-INF/ReLabMaven.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,8 +105,16 @@
       <workItem from="1586000877780" duration="1715000" />
       <workItem from="1586388878420" duration="184000" />
       <workItem from="1586390978238" duration="23000" />
-      <workItem from="1586450651640" duration="661000" />
+      <workItem from="1586450651640" duration="918000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished">
+      <created>1586451337351</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586451337351</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,30 +145,34 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="399" y="89" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1585334959244" />
-    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1586451215899">
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1586451333928">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586451215899" />
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586451333928" />
+    <state x="122" y="50" key="DiffContextDialog" timestamp="1586451326761">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="122" y="50" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1586451326761" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1585376119085">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585376119085" />
-    <state width="1237" height="184" key="GridCell.Tab.0.bottom" timestamp="1586451215968">
+    <state width="1237" height="184" key="GridCell.Tab.0.bottom" timestamp="1586451684269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="184" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586451215968" />
-    <state width="1237" height="184" key="GridCell.Tab.0.center" timestamp="1586451215967">
+    <state width="1237" height="184" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586451684269" />
+    <state width="1237" height="184" key="GridCell.Tab.0.center" timestamp="1586451684269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="184" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586451215967" />
-    <state width="1237" height="184" key="GridCell.Tab.0.left" timestamp="1586451215967">
+    <state width="1237" height="184" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586451684269" />
+    <state width="1237" height="184" key="GridCell.Tab.0.left" timestamp="1586451684269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="184" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586451215967" />
-    <state width="1237" height="184" key="GridCell.Tab.0.right" timestamp="1586451215968">
+    <state width="1237" height="184" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586451684269" />
+    <state width="1237" height="184" key="GridCell.Tab.0.right" timestamp="1586451684269">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="184" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586451215968" />
+    <state width="1237" height="184" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586451684269" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1585646300486">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -312,6 +197,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586450596006" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1586451340063">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586451340063" />
     <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1586450575065">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

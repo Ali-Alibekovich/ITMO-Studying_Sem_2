@@ -24,6 +24,11 @@ public class Client {
         CommandsMap commandsMap = new CommandsMap(collectionManager, collection, scanner, filename);
         commandsMap.setCommandHashMap();
         commandsMap.getCommandHashMap().get("load").execute("".split(""));
+        System.out.println(
+                "////////////////////////////////////////////////////////////////////////////////////////////////////////////"+"\n" +
+                "   Добро пожаловать в программу управления коллекцией. Для получения информации по командам введите help\n  " +
+                "                              Created by @Ali.Alibekovich, @Group P3114                                   \n"+
+                "////////////////////////////////////////////////////////////////////////////////////////////////////////////");
         CommandExecutor commandExecutor = new CommandExecutor(commandsMap.getCommandHashMap());
         while (scanner.hasNextLine()) {
             commandExecutor.executeCommand(scanner.nextLine().toLowerCase().split(" "));
