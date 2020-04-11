@@ -1,0 +1,43 @@
+The system is: Windows - 10.0.18362 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "C:/Users/79312/Desktop/ITMO-Studying_Sem_2/C++_on_stepic__entry_level__/Section_1/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "C:/Users/79312/Desktop/ITMO-Studying_Sem_2/C++_on_stepic__entry_level__/Section_1/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/79312/Desktop/ITMO-Studying_Sem_2/C++_on_stepic__entry_level__/Section_1/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe cmTC_8b866/fast && C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_8b866.dir\build.make CMakeFiles/cmTC_8b866.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/79312/Desktop/ITMO-Studying_Sem_2/C++_on_stepic__entry_level__/Section_1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b866.dir/testCCompiler.c.obj
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_8b866.dir\testCCompiler.c.obj   -c C:\Users\79312\Desktop\ITMO-Studying_Sem_2\C++_on_stepic__entry_level__\Section_1\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_8b866.exe
+"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8b866.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_8b866.dir/objects.a
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\cmTC_8b866.dir/objects.a @CMakeFiles\cmTC_8b866.dir\objects1.rsp
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_8b866.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8b866.exe -Wl,--out-implib,libcmTC_8b866.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8b866.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Users/79312/Desktop/ITMO-Studying_Sem_2/C++_on_stepic__entry_level__/Section_1/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
