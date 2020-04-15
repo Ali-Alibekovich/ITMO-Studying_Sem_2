@@ -1,1 +1,1 @@
-<h3><a href="https://draw.io" target="_blank" >Сайт для построения диаграмм</a></h3>
+<h3><a href="https://draw.io" onclick="return !window.open(this.href)" >Сайт для построения диаграмм</a></h3>
