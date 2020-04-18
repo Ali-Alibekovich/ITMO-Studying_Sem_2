@@ -103,10 +103,12 @@ public class HumanReader{
         }
 
     }
+
+
+    static boolean xCoordinate;
     /**
      * @return возращает переменную типа long
      */
-    static boolean xCoordinate;
     private long readerLong(String request, Scanner sc) {
         xCoordinate=false;
         if(!getScriptIsRunning())
@@ -222,10 +224,11 @@ public class HumanReader{
         }
         return null;
     }
+
+    boolean yCoordinate;
     /**
      * @return возращает переменную типа float
      */
-    boolean yCoordinate;
     private Float readerFloat(String request, Scanner sc) {
         yCoordinate=false;
         if(!getScriptIsRunning())
