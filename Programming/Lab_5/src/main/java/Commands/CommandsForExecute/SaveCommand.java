@@ -25,7 +25,7 @@ public class SaveCommand implements CommandIF {
             if(!getScriptIsRunning())
             System.out.println("Данные сохранены");
         } catch (IOException e) {
-            System.out.println("Файл не найден или недостаточно прав");
+            System.out.println("недостаточно прав");
         }
     }
 
